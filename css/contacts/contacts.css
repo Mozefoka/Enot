@@ -32,6 +32,16 @@
   font-weight: 600;
   margin-bottom: 30px;
 }
+.contacts__content-phone {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.contacts__content-mail {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
 .contacts__content-schedule :last-child {
   color: #ff4a4a;
 }
@@ -109,7 +119,7 @@
   margin-bottom: 30px;
 }
 .application__agreement a {
-  color: #5954A4;
+  color: #5954a4;
 }
 .application__img {
   display: flex;

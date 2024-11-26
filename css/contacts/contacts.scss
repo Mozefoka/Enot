@@ -11,14 +11,13 @@
         padding-top: 50px;
         flex-direction: column;
     }
-    
 
     &__content {
         line-height: 1.55;
 
         div {
             font-size: 18px;
-            font-family: 'Manrope', Arial, sans-serif;
+            font-family: "Manrope", Arial, sans-serif;
             margin-bottom: 20px;
         }
 
@@ -37,20 +36,31 @@
         margin-bottom: 30px;
     }
 
+    &__content-phone {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+
+    &__content-mail {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+
     &__content-schedule {
         :last-child {
-            color: #ff4a4a
+            color: #ff4a4a;
         }
     }
 
     &__content-request {
         font-size: 20px;
-        font-family: 'Manrope', Arial, sans-serif;
+        font-family: "Manrope", Arial, sans-serif;
         margin-bottom: 30px;
     }
 }
 .application {
-
     &__title {
         font-size: 40px;
         font-weight: 600;
@@ -121,14 +131,14 @@
         margin: 0 auto;
         padding: 0 10px;
         font-size: 15px;
-        font-family: 'Manrope', Arial, sans-serif;
+        font-family: "Manrope", Arial, sans-serif;
         line-height: 1.55;
         text-align: center;
         margin-bottom: 30px;
 
-    a {
-        color: #5954A4;
-    }
+        a {
+            color: #5954a4;
+        }
     }
 
     &__img {

@@ -15,10 +15,8 @@
     }
 
     &__content--gap {
-
         @media (max-width: 960px) {
             gap: 0;
-
         }
     }
 
@@ -26,8 +24,8 @@
         padding: 20px 0;
 
         @media (max-width: 960px) {
-         padding: 75px 0 0 0;
-     }
+            padding: 75px 0 0 0;
+        }
     }
 
     &__content-title {
@@ -89,5 +87,5 @@
 }
 
 .services--color {
-    background-color: #F3F3F3;
+    background-color: #f3f3f3;
 }
