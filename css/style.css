@@ -120,6 +120,12 @@ li {
     font-size: 16px;
   }
 }
+.header__menu-list-promotions-item {
+  display: none;
+}
+.header__menu-list-promotions-item--active {
+  display: block;
+}
 .header__menu-list-number {
   display: none;
 }
@@ -187,6 +193,9 @@ li {
   height: 260px;
   display: inline-block;
   overflow: hidden;
+}
+.catalog__content-card a {
+  display: inline;
 }
 .catalog__content-card img {
   transition: 1s;
@@ -415,27 +424,11 @@ li {
   line-height: 1.55;
   margin-bottom: 30px;
 }
-.contact-us__messengers {
-  display: flex;
-  gap: 10px;
-}
-@media (max-width: 969px) {
-  .contact-us__messengers {
-    margin-bottom: 40px;
-  }
-}
-.contact-us__map {
-  max-width: 660px;
-  width: 100%;
-  text-align: center;
-}
-.contact-us__map iframe {
-  max-width: 600px;
-  width: 100%;
-}
 
 .footer {
-  padding: 60px 0 70px 0;
+  padding: 60px 40px 70px;
+  font-size: 16px;
+  font-family: Figtree, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
   text-align: center;
 }
 @media (max-width: 969px) {
@@ -443,22 +436,41 @@ li {
     padding: 40px 0 40px 0;
   }
 }
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 15px 0;
+  border-bottom: 0.5px solid #e5e7eb;
+}
+@media (max-width: 969px) {
+  .footer__menu {
+    display: none;
+  }
+}
+.footer__logo {
+  width: 100px;
+  height: 35px;
+}
 .footer__menu-list {
   display: flex;
   justify-content: center;
   gap: 30px;
   font-weight: 600;
   padding: 0 15px;
-  margin-bottom: 40px;
 }
-@media (max-width: 969px) {
-  .footer__menu-list {
-    display: none;
-  }
+.footer__messengers {
+  display: flex;
+  gap: 3px;
+}
+.footer__messengers img {
+  width: 27px;
+  height: 27px;
 }
 .footer__info {
-  font-family: "Manrope", sans-serif;
-  color: #7c7c7c;
+  font-size: 16px;
+  font-weight: 400;
+  color: #d1d5db;
   line-height: 1.5;
 }
 @media (max-width: 969px) {
@@ -475,14 +487,14 @@ li {
     font-weight: 600;
   }
 }
-.footer__contacts-massengers {
+.footer__contacts-messengers {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3px;
   margin-bottom: 20px;
 }
-.footer__massengers-item {
+.footer__messengers-item {
   width: 30px;
 }
 .footer__contacts-name {
@@ -501,4 +513,24 @@ li {
   background-image: url("../icons/arrow-up.png");
   background-size: 16px 19px;
   background-repeat: no-repeat;
+}
+
+.messengers {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 969px) {
+  .messengers {
+    margin-bottom: 40px;
+  }
+}
+
+.map {
+  max-width: 660px;
+  width: 100%;
+  text-align: center;
+}
+.map iframe {
+  max-width: 600px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

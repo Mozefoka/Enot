@@ -128,6 +128,14 @@ li {
         }
     }
 
+    &__menu-list-promotions-item {
+        display: none;
+    }
+
+    &__menu-list-promotions-item--active {
+        display: block;
+    }
+
     &__menu-list-number {
         display: none;
 
@@ -168,6 +176,7 @@ li {
 }
 
 .catalog {
+
     &__content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -194,6 +203,10 @@ li {
         height: 260px;
         display: inline-block;
         overflow: hidden;
+
+        a {
+            display: inline;
+        }
 
         img {
             transition: 1s;
@@ -432,34 +445,33 @@ li {
         line-height: 1.55;
         margin-bottom: 30px;
     }
-
-    &__messengers {
-        display: flex;
-        gap: 10px;
-
-        @media (max-width: 969px) {
-            margin-bottom: 40px;
-        }
-    }
-
-    &__map {
-        max-width: 660px;
-        width: 100%;
-        text-align: center;
-
-        iframe {
-            max-width: 600px;
-            width: 100%;
-        }
-    }
 }
 
 .footer {
-    padding: 60px 0 70px 0;
+    padding: 60px 40px 70px;
+    font-size: 16px;
+    font-family: Figtree, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
     text-align: center;
 
     @media (max-width: 969px) {
         padding: 40px 0 40px 0;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px 15px 0;
+        border-bottom: 0.5px solid #e5e7eb;
+
+        @media (max-width: 969px) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        width: 100px;
+        height: 35px;
     }
 
     &__menu-list {
@@ -468,16 +480,22 @@ li {
         gap: 30px;
         font-weight: 600;
         padding: 0 15px;
-        margin-bottom: 40px;
+    }
 
-        @media (max-width: 969px) {
-            display: none;
+    &__messengers {
+        display: flex;
+        gap: 3px;
+
+        img {
+            width: 27px;
+            height: 27px;
         }
     }
 
     &__info {
-        font-family: "Manrope", sans-serif;
-        color: #7c7c7c;
+        font-size: 16px;
+        font-weight: 400;
+        color: #d1d5db;
         line-height: 1.5;
 
         @media (max-width: 969px) {
@@ -494,7 +512,7 @@ li {
         }
     }
 
-    &__contacts-massengers {
+    &__contacts-messengers {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -502,7 +520,7 @@ li {
         margin-bottom: 20px;
     }
 
-    &__massengers-item {
+    &__messengers-item {
         width: 30px;
     }
 
@@ -524,5 +542,25 @@ li {
             background-size: 16px 19px;
             background-repeat: no-repeat;
         }
+    }
+}
+
+.messengers {
+    display: flex;
+    gap: 10px;
+
+    @media (max-width: 969px) {
+        margin-bottom: 40px;
+    }
+}
+
+.map {
+    max-width: 660px;
+    width: 100%;
+    text-align: center;
+
+    iframe {
+        max-width: 600px;
+        width: 100%;
     }
 }
