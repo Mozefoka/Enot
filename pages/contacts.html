@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/contacts/contacts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <title>Каталог</title>
+</head>
+
+<body>
+    <header class="header" id="up">
+        <div class="header__logo">
+            <a href="/index.html"><img src="/icons/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="header__burger">
+            <span class="header__burger-line1"></span>
+            <span class="header__burger-line2"></span>
+            <span class="header__burger-line3"></span>
+        </div>
+
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-list-main"><a href="/index.html">Главная</a></li>
+                <li class="header__menu-list-catalog"><a href="/pages/catalog.html">Каталог</a></li>
+                <li class="header__menu-list-services"><a href="/pages/services.html">Услуги</a></li>
+                <li class="header__menu-list-promotions"><a href="#">Акции</a></li>
+                <li class="header__menu-list-useful"><a href="/pages/useful.html">Полезное</a></li>
+                <li class="header__menu-list-about"><a href="/pages/about.html">О нас</a></li>
+                <li class="header__menu-list-contacts"><a href="#">Контакты</a></li>
+                <li class="header__menu-list-number"><a href="tel:+79213466257">+7 921 346 62 57</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__phone-number"><a href="tel:+79213466257">+7 921 346 62 57</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="contacts">
+                <div class="contacts__content">
+                    <h2 class="contacts__content-title">Контакты</h2>
+                    <div class="contacts__content-phone">Телефон: <a href="tel:+79213466257">+7 921 346 62 57</a></div>
+                    <div class="contacts__content-mail">Почта: <a href="mailto:enotparket@gmail.com">enotparket@gmail.com</a>
+                    </div>
+                    <div class="contacts__content-location">Шоу-рум:   <span>Санкт — Петербург, Ленинский пр. 128 к. 2 ТЦ «Нарва» 3 этаж</span></div>
+                    <div class="contacts__content-schedule">Режим работы: <span>Понедельник-Воскресенье с 10:00 до 20:00</span>
+                            <br>
+                        <span>Вторник : выходной
+                            22.11.2024 с 15:30 магазин не работает (переучет)</span>
+                    </div>
+                    <p class="contacts__content-request">Если у Вас остались вопросы, свяжитесь с нами и наши менеджеры
+                        ответят на любые вопросы.</p>
+
+                    <div class="contact__messengers">
+                        <div class="contact__messengers-item"><img src="/icons/tg.svg" alt="tg"></div>
+                        <div class="contact__messengers-item"><img src="/icons/whatsapp.svg" alt="whatsapp"></div>
+                        <div class="contact__messengers-item"><img src="/icons/youtube.svg" alt="youtube"></div>
+                        <div class="contact__messengers-item"><img src="/icons/vk.svg" alt="vk"></div>
+                    </div>
+                </div>
+
+                <div class="contact__map"><iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A21546ac9cb6d8591786425705abffc1b799bbe53c2d34e4d8ac9c8de5e7c634d&amp;source=constructor"
+                        width="660" height="400" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <div class="application">
+                <h2 class="application__title">Оставить заявку</h2>
+                <h3 class="application__sub-title">Оставьте Ваше сообщение, и наши менеджеры свяжутся с Вами в ближайшее время.</h3>
+
+                <form class="application__form" action="">
+                    <div class="application__form-item">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Введите ваш email" required />
+                    </div>
+
+                    <div class="application__form-item">
+                        <label>Имя</label>
+                        <input type="text" pattern="^[A-Za-zА-Яа-яЁё]" placeholder="Введите имя">
+                    </div>
+
+                    <div class="application__form-item">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" name="phone" pattern="[+]{1}[0-9]{11,14}"  placeholder="Введите номер телефона" value="21" required />
+                    </div>
+
+                    <div class="application__form-item">
+                        <label>Сообщение</label>
+                        <textarea rows="5" cols="33" placeholder="Введите ваше сообщение"></textarea>
+                    </div>
+
+                    <button class="application__btn" type="submit">Отправить заявку</button>
+                </form>
+                <p class="application__agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных
+                    и соглашаетесь <a href="#">c политикой конфиденциальности.</a></p>
+
+                <div class="application__img">
+                    <img src="/images/worker.png" alt="worker">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer__menu">
+            <ul class="footer__menu-list">
+                <li class="footer__menu-list-main"><a href="/index.html">Главная</a></li>
+                <li class="footer__menu-list-catalog"><a href="/pages/catalog.html">Каталог</a></li>
+                <li class="footer__menu-list-services"><a href="/pages/services.html">Услуги</a></li>
+                <li class="footer__menu-list-about"><a href="/pages/about.html">О нас</a></li>
+                <li class="footer__menu-list-contacts"><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <p class="footer__info">© ЕнотПаркет. Все права защищены. <br>
+            Информация, предоставленная на сайте, не является публичной офертой</p>
+
+        <div class="footer__contacts">
+            <div class="footer__contacts-massengers">
+                <div class="footer__massengers-item"><img src="/icons/tg.svg" alt="tg"></div>
+                <div class="footer__massengers-item"><img src="/icons/whatsapp.svg" alt="whatsapp"></div>
+                <div class="footer__massengers-item"><img src="/icons/vk.svg" alt="vk"></div>
+            </div>
+
+            <div class="footer__contacts-name">© 2023 Енот Паркет</div>
+            <div class="footer__contacts-up"><a href="#up">Наверх</a></div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

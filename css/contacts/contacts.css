@@ -1,0 +1,117 @@
+.contacts {
+  display: flex;
+  gap: 20px;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+@media (max-width: 960px) {
+  .contacts {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto 40px;
+    padding-top: 50px;
+    flex-direction: column;
+  }
+}
+.contacts__content {
+  line-height: 1.55;
+}
+.contacts__content div {
+  font-size: 18px;
+  font-family: "Manrope", Arial, sans-serif;
+  margin-bottom: 20px;
+}
+.contacts__content a {
+  color: #9e9e9e;
+}
+.contacts__content span {
+  color: #9e9e9e;
+}
+.contacts__content-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.contacts__content-schedule :last-child {
+  color: #ff4a4a;
+}
+.contacts__content-request {
+  font-size: 20px;
+  font-family: "Manrope", Arial, sans-serif;
+  margin-bottom: 30px;
+}
+.application__title {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.application__sub-title {
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 75px;
+}
+.application__form {
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.application__form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.application__form input {
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 16px;
+  border: 1px solid #000000;
+}
+.application__form textarea {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 20px 20px;
+  font-size: 16px;
+  border: 1px solid #000000;
+}
+.application__form-item {
+  margin-bottom: 25px;
+}
+.application__btn {
+  display: block;
+  max-width: 230px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 20px 0;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #159947;
+  margin-bottom: 30px;
+}
+.application__agreement {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-size: 15px;
+  font-family: "Manrope", Arial, sans-serif;
+  line-height: 1.55;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.application__agreement a {
+  color: #5954A4;
+}
+.application__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=contacts.css.map */

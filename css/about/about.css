@@ -1,0 +1,129 @@
+@charset "UTF-8";
+.about {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0 15px;
+  margin-bottom: 100px;
+}
+@media (max-width: 969px) {
+  .about {
+    justify-content: center;
+  }
+}
+.about span {
+  color: #159947;
+}
+.about__content {
+  max-width: 700px;
+}
+.about__title {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.about__sub-title {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.about__text {
+  font-size: 16px;
+  font-family: "Manrope", Arial, sans-serif;
+  line-height: 1.55;
+  margin-bottom: 30px;
+}
+.about__buttons {
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+  font-family: "Manrope", Arial, sans-serif;
+}
+@media (max-width: 500px) {
+  .about__buttons {
+    flex-direction: column;
+    max-width: 201px;
+  }
+}
+.about__services-btn {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #159947;
+  color: #159947;
+  padding: 18px 55px;
+}
+.about__сontact-btn {
+  display: inline-block;
+  background-color: #159947;
+  color: #fff;
+  padding: 18px 40px;
+}
+.about__img {
+  min-width: 450px;
+}
+@media (max-width: 969px) {
+  .about__img {
+    display: none;
+  }
+}
+
+.reviews {
+  margin-bottom: 50px;
+}
+.reviews_-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.reviews__sub-title {
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.reviews__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2;
+  gap: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media (max-width: 969px) {
+  .reviews__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4;
+    justify-items: center;
+  }
+}
+.reviews__content-item {
+  max-width: 560px;
+  padding: 65px 30px 30px;
+  background-color: #F7F7F7;
+}
+.reviews__content-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.reviews__content-text {
+  font-size: 15px;
+  font-family: "Manrope", Arial, sans-serif;
+  line-height: 1.55;
+}
+.reviews__btn {
+  text-align: center;
+}
+.reviews__btn a {
+  display: inline-block;
+  padding: 20px 60px;
+  font-size: 16px;
+  font-family: "Manrope", Arial, sans-serif;
+  color: #ffffff;
+  background-color: #159947;
+}/*# sourceMappingURL=about.css.map */
