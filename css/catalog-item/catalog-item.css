@@ -1,0 +1,202 @@
+.filts-n-view {
+  display: none;
+}
+@media (max-width: 700px) {
+  .filts-n-view {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-top: 40px;
+  }
+}
+
+.filts {
+  display: none;
+  margin: 0 0 30px 30px;
+}
+@media (max-width: 700px) {
+  .filts {
+    display: block;
+    width: 585px;
+  }
+}
+
+.floor-covering__filter-item[open] .floor-covering__filter-item-title {
+  margin-bottom: 20px;
+}
+
+.floor-covering {
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+  margin-top: 60px;
+}
+@media (max-width: 700px) {
+  .floor-covering {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+.floor-covering__filter {
+  width: 30%;
+}
+@media (max-width: 700px) {
+  .floor-covering__filter {
+    display: none;
+  }
+}
+.floor-covering__filter-title-n-reset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 10px;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+.floor-covering__filter-reset {
+  background-image: url("/icons/reset.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  padding: 0 0 1px 20px;
+  background-color: #fff;
+}
+@media (max-width: 700px) {
+  .floor-covering__filter-reset {
+    margin-top: 20px;
+  }
+}
+.floor-covering__filter-block {
+  border: 1px solid rgba(10, 7, 27, 0.1019607843);
+  margin-bottom: 40px;
+}
+.floor-covering__filter-item {
+  position: relative;
+  padding: 12px 10px;
+  border-bottom: 1px solid rgba(10, 7, 27, 0.1019607843);
+}
+.floor-covering__filter-item ::after {
+  content: "";
+  position: absolute;
+  background-image: url("/icons/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  width: 10px;
+  height: 10px;
+  right: 10px;
+  top: 13px;
+  display: block;
+  padding: 0px 5px 14px 9px;
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+.floor-covering__filter-item[open] ::after {
+  transform: rotate(0deg);
+}
+.floor-covering__filter-item-title {
+  margin-left: 10px;
+  padding: 5px 0;
+  list-style: none;
+}
+.floor-covering__filter-item-brand {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.floor-covering__filter-btn {
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .floor-covering__filter-btn {
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+}
+.floor-covering__filter-btn button {
+  padding: 18px 55px;
+  color: #fff;
+  background-color: #159947;
+}
+.floor-covering__content {
+  width: 70%;
+}
+.floor-covering__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+@media (max-width: 700px) {
+  .floor-covering__options {
+    display: none;
+  }
+}
+.floor-covering__options-btns {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.floor-covering__options-lines {
+  width: 20px;
+  height: 10px;
+  margin-bottom: 2px;
+}
+.floor-covering__options-line {
+  display: block;
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+  margin-bottom: 3px;
+}
+.floor-covering__options-cube {
+  width: 20px;
+  background-color: #fff;
+}
+.floor-covering__options-sorting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 30px;
+}
+.floor-covering__options-sorting-btn {
+  text-align: center;
+  outline: none;
+}
+.floor-covering__content-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 969px) {
+  .floor-covering__content-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .floor-covering__content-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.floor-covering__content-card {
+  padding: 40px 20px;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+}
+.floor-covering__content-card-img {
+  margin-bottom: 15px;
+}
+.floor-covering__content-card-title {
+  margin-bottom: 15px;
+}
+.floor-covering__content-card-name {
+  color: gray;
+  margin-bottom: 15px;
+}
+.floor-covering__content-card-price {
+  display: flex;
+  justify-content: space-between;
+}
+.floor-covering__content-card-price--color {
+  color: gray;
+}/*# sourceMappingURL=catalog-item.css.map */
