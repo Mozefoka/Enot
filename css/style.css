@@ -17,6 +17,14 @@ li {
   list-style: none;
 }
 
+input[type=checkbox] {
+  accent-color: #159947;
+}
+
+input[type=range] {
+  accent-color: #159947;
+}
+
 .header {
   height: 80px;
   display: flex;
