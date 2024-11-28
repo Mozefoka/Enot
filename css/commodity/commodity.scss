@@ -93,6 +93,10 @@
         margin-bottom: 3px;
     }
 
+    &__info-text--color {
+        color: red;
+    }
+
     &__info-btn {
         max-width: 160px;
         width: 100%;
@@ -102,7 +106,17 @@
         background-color: #159947;
     }
 
-    &__description {
+    &__properties {
+        button {
+            padding: 20px 50px;
+            color: #22ad5c;
+            border-bottom: 3px solid #22ad5c;
+            background-color: rgba(34, 173, 92, 0.5);
+            margin-bottom: 30px;
+        }
+    }
+
+    &__properties-description {
         font-size: 15px;
         font-family: "Manrope", sans-serif;
         line-height: 1.5;
@@ -113,5 +127,21 @@
             width: 100%;
             margin: 0 auto;
         }
+    }
+
+    &__description-btn {
+    }
+
+    &__description-text {
+    }
+
+    &__properties-characteristics-btn {
+    }
+
+    &__properties-characteristics-text {
+        display: none;
+    }
+
+    &__properties-characteristics {
     }
 }

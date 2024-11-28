@@ -86,6 +86,9 @@
   background-color: #f7f7f7;
   margin-bottom: 3px;
 }
+.commodity__info-text--color {
+  color: red;
+}
 .commodity__info-btn {
   max-width: 160px;
   width: 100%;
@@ -94,16 +97,26 @@
   color: #fff;
   background-color: #159947;
 }
-.commodity__description {
+.commodity__properties button {
+  padding: 20px 50px;
+  color: #22ad5c;
+  border-bottom: 3px solid #22ad5c;
+  background-color: rgba(34, 173, 92, 0.5);
+  margin-bottom: 30px;
+}
+.commodity__properties-description {
   font-size: 15px;
   font-family: "Manrope", sans-serif;
   line-height: 1.5;
   margin-bottom: 40px;
 }
 @media (max-width: 969px) {
-  .commodity__description {
+  .commodity__properties-description {
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
   }
+}
+.commodity__properties-characteristics-text {
+  display: none;
 }/*# sourceMappingURL=commodity.css.map */

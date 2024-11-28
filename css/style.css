@@ -32,16 +32,22 @@ input[type=range] {
   padding: 10px 20px;
   margin-bottom: 30px;
 }
-.breadcrumbs a {
-  color: #637381;
-}
-
 .breadcrumbs__item {
-  color: #637381;
+  color: #b6b6b6;
 }
 .breadcrumbs__item :after {
   content: ">";
   padding: 10px;
+}
+.breadcrumbs__item-link {
+  color: #b6b6b6;
+}
+.breadcrumbs__item-link--color {
+  color: #dfdfdf;
+}
+
+.breadcrumbs--padding-none {
+  padding: 10px 0;
 }
 
 .header {
@@ -488,7 +494,7 @@ input[type=range] {
 .footer {
   padding: 60px 40px 70px;
   font-size: 16px;
-  font-family: Figtree, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  font-family: "Oswald", sans-serif;
   text-align: center;
 }
 @media (max-width: 969px) {
