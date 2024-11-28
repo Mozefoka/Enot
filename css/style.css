@@ -25,6 +25,25 @@ input[type=range] {
   accent-color: #159947;
 }
 
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+.breadcrumbs a {
+  color: #637381;
+}
+
+.breadcrumbs__item {
+  color: #637381;
+}
+.breadcrumbs__item :after {
+  content: ">";
+  padding: 10px;
+}
+
 .header {
   height: 80px;
   display: flex;

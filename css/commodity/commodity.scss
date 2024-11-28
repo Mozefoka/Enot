@@ -1,0 +1,117 @@
+.commodity {
+    padding: 0 20px;
+
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 100px;
+
+        @media (max-width: 969px) {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 75px;
+        }
+        
+    }
+
+    &__content-item-images {
+        max-width: 800px;
+        width: 100%;
+
+        @media (max-width: 969px) {
+            max-width: 700px;
+        }
+    }
+
+    &__content-img {
+        margin-bottom: 30px;
+
+        img {
+            max-width: 730px;
+            width: 100%;
+            height: 490px;
+
+            @media (max-width: 500px) {
+                height: 300px;
+            }
+        }
+    }
+
+    &__media {
+        display: flex;
+        gap: 15px;
+
+        @media (max-width: 969px) {
+            gap: 40px;
+        }
+    }
+
+    &__media-img {
+        max-width: 130px;
+
+        @media (max-width: 969px) {
+            max-width: 330px;
+        }
+    }
+
+    &__content-item-info {
+        max-width: 400px;
+        width: 100%;
+        padding-top: 53px;
+
+        
+        @media (max-width: 969px) {
+            max-width: 720px;
+            padding-top: 40px;
+        }
+    }
+
+    &__info {
+        margin-bottom: 30px;
+    }
+
+    &__info-title {
+        padding: 10px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #159947;
+    }
+
+    &__info-text {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #f7f7f7;
+        margin-bottom: 3px;
+    }
+
+    &__info-btn {
+        max-width: 160px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 18px 40px;
+        color: #fff;
+        background-color: #159947;
+    }
+
+    &__description {
+        font-size: 15px;
+        font-family: "Manrope", sans-serif;
+        line-height: 1.5;
+        margin-bottom: 40px;
+
+        @media (max-width: 969px) {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
