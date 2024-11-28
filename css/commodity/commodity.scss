@@ -107,13 +107,18 @@
     }
 
     &__properties {
+
         button {
             padding: 20px 50px;
             color: #22ad5c;
             border-bottom: 3px solid #22ad5c;
-            background-color: rgba(34, 173, 92, 0.5);
-            margin-bottom: 30px;
+            background-color: rgba(34, 173, 92, 0.1);
         }
+    }
+
+    &__properties-btns {
+        background-color: #f7f7f7;
+        margin-bottom: 30px;
     }
 
     &__properties-description {
