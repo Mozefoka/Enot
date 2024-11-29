@@ -25,6 +25,67 @@ input[type="range"] {
     accent-color: #159947;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2 {
+    height: 80%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
 .breadcrumbs {
     display: flex;
     align-items: center;
@@ -436,29 +497,53 @@ input[type="range"] {
     }
 
     &__list-item {
-        display: flex;
-        justify-content: space-between;
-        gap: 40px;
+        position: relative;
         padding: 25px 30px;
         background-color: #f3f3f3;
         margin-bottom: 2px;
+
+        @media (max-width: 590px) {
+            padding: 25px 40px 25px 15px;
+        }
     }
 
-    &__list-item-plus {
-        position: relative;
+    &__list-item-title{
+        
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../icons/plus.png);
+            background-size: 40px;
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 40px;
+            top: 16px;
+            right: 30px;
+            transition: all 0.3s;
+
+            @media (max-width: 590px) {
+                right: 0px;
+            }
+        }
     }
 
-    &__list-item-plus-line {
+    &__list-item-title--active{
+        
+        &::after {
+            transform: rotate(-45deg);
+            border-radius: 100%;
+            background-color: #eeeeee;
+        }
+    }
+
+    &__list-item-text {
+        display: none;
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    &__list-item-text--active {
         display: block;
-        position: absolute;
-        width: 2px;
-        height: 25px;
-        background-color: #a7a7a7;
-    }
-
-    &__list-item-plus-line--turned {
-        position: absolute;
-        transform: rotate(90deg);
     }
 }
 .contact-us {

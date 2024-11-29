@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/commodity/commodity.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
-    <title>Каталог</title>
+    <title>Товар</title>
 </head>
 
 <body>
@@ -64,12 +65,64 @@
                     <div class="commodity__content-item-images">
                         <h1 class="commodity__title">ПВХ плитка</h1>
 
-                        <div class="commodity__content-img"><img src="../images/33417846.jpg" alt="commodity"></div>
 
-                        <div class="commodity__media">
-                            <div class="commodity__media-img"><img src="../images/33417846.jpg" alt="commodity"></div>
-                            <div class="commodity__media-img"><img src="../images/33417846.jpg" alt="commodity"></div>
-                        </div>
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide commodity__content-img">
+                                <img src="../images/33417846.jpg" alt="commodity">
+                              </div>
+
+                              <div class="swiper-slide commodity__content-img">
+                                <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                              </div>
+                         
+                              <div class="swiper-slide commodity__content-img">
+                                <img src="../images/33417846.jpg" alt="commodity">
+                              </div>
+
+                              <div class="swiper-slide commodity__content-img">
+                                <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                              </div>
+                              <div class="swiper-slide commodity__content-img">
+                                <img src="../images/33417846.jpg" alt="commodity">
+                              </div>
+
+                              <div class="swiper-slide commodity__content-img">
+                                <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                              </div>
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                          </div>
+
+                          <div thumbsSlider="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide commodity__media-img">
+                                <img src="../images/33417846.jpg" alt="commodity">
+                              </div>
+
+                              <div class="swiper-slide commodity__media-img">
+                                <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                              </div>
+
+                              <div class="swiper-slide commodity__media-img">
+                                <img src="../images/33417846.jpg" alt="commodity">
+                              </div>
+
+                              <div class="swiper-slide commodity__media-img">
+                                <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                              </div>
+
+                              <div class="swiper-slide commodity__media-img">
+                                <img src="../images/33417846.jpg" alt="commodity">
+                              </div>
+
+                              <div class="swiper-slide commodity__media-img">
+                                <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                              </div>
+                            </div>
+                          </div>
                     </div>
 
                     <div class="commodity__content-item-info">
@@ -214,6 +267,26 @@
     </footer>
 
     <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
+        
+        const swiper2 = new Swiper(".mySwiper2", {
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: swiper,
+          },
+        });
+      </script>
 </body>
 
 </html>
