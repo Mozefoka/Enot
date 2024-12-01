@@ -3,6 +3,7 @@
 }
 .services__content {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 40px;
   padding: 0 20px;

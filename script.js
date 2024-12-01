@@ -7,9 +7,9 @@ const line3 = document.querySelector(".header__burger-line3");
 const menu = document.querySelector(".header__menu");
 const promotions = document.querySelector(".header__menu-list-promotions-btn");
 const promotionsItem = document.querySelector(".header__menu-list-promotions-item");
-const questionsItem = document.querySelector(".questions__list-item");
-const questionsTitle = document.querySelector(".questions__list-item-title");
-const questionsText = document.querySelector(".questions__list-item-text");
+const filterForm = document.querySelector(".floor-covering__filter");
+const filterReset = document.querySelector(".floor-covering__filter-reset");
+const infoPopup = document.querySelector(".commodity__info-popup-wrapper");
 
 burger.addEventListener('click', function() {
 	burger.classList.toggle("header__burger--active");
@@ -23,7 +23,6 @@ function addActive() {
 	promotionsItem.classList.toggle("header__menu-list-promotions-item--active");
 };
 
-	questionsItem.addEventListener('click', function() {
-		questionsTitle.classList.toggle("questions__list-item-title--active");
-		questionsText.classList.toggle("questions__list-item-text--active");
-	});
+function popup() {
+	infoPopup.classList.toggle("commodity__info-popup-wrapper--active");
+};

@@ -167,6 +167,7 @@
 .floor-covering__content-card {
   padding: 40px 20px;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
 }
 .floor-covering__content-card-img {
   margin-bottom: 15px;
@@ -184,4 +185,23 @@
 }
 .floor-covering__content-card-price--color {
   color: gray;
-}/*# sourceMappingURL=catalog-item.css.map */
+}
+.floor-covering__pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.floor-covering__pages :first-child {
+  font-size: 25px;
+}
+.floor-covering__pages :last-child {
+  font-size: 25px;
+}
+.floor-covering__pages a {
+  padding: 8px 15px;
+}
+.floor-covering__pages--active {
+  color: #fff;
+  background-color: #159947;
+  border-radius: 5px;
+}/*# sourceMappingURL=floor-covering.css.map */
