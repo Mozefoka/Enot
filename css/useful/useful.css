@@ -6,7 +6,7 @@
   font-size: 28px;
   font-weight: 600;
   line-height: 1.17;
-  margin: 0 20px 60px 20px;
+  margin: 0 40px 60px 40px;
 }
 @media (max-width: 960px) {
   .useful__title {
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  padding: 0 15px;
+  padding: 0 40px;
 }
 @media (max-width: 960px) {
   .useful__content {

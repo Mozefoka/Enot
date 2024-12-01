@@ -125,7 +125,7 @@ input[type=range] {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 20px;
+  padding: 20px 0 20px 40px;
   margin-bottom: 30px;
 }
 .breadcrumbs__item :after {
@@ -148,7 +148,7 @@ input[type=range] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 40px;
   margin-bottom: 10px;
 }
 .header__logo {
@@ -265,11 +265,12 @@ input[type=range] {
   top: 40px;
   right: -60px;
   width: 150px;
-  padding: 25px 20px;
+  padding: 25px 11px;
   background-color: #fff;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
   font-size: 14px;
   font-family: "Manrope", sans-serif;
+  text-align: center;
   z-index: 5;
 }
 .header__menu-list-promotions-item--active :first-child {
@@ -307,7 +308,9 @@ input[type=range] {
 }
 .banner img {
   width: 100%;
-  height: 415px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 769px) {
   .banner img {
@@ -335,7 +338,7 @@ input[type=range] {
   grid-template-columns: repeat(3, 1fr);
   grid-row: 2;
   gap: 20px;
-  padding: 0 20px;
+  padding: 0 40px;
   margin-bottom: 60px;
 }
 @media (max-width: 997px) {
@@ -450,7 +453,7 @@ input[type=range] {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  padding: 0 20px;
+  padding: 0 40px;
   text-align: center;
 }
 @media (max-width: 969px) {
@@ -503,7 +506,7 @@ input[type=range] {
 }
 
 .questions {
-  margin: 0 10px 90px 10px;
+  margin: 0 20px 90px 20px;
 }
 .questions__list {
   font-size: 24px;
@@ -608,7 +611,7 @@ input[type=range] {
 }
 
 .footer {
-  padding: 60px 20px 70px;
+  padding: 60px 40px 70px;
   font-size: 16px;
   font-family: "Oswald", sans-serif;
   text-align: center;

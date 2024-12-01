@@ -49,3 +49,9 @@ function addActive() {
 function popup() {
 	infoPopup.classList.toggle("commodity__info-popup-wrapper--active");
 };
+
+window.addEventListener("click", (event) => {
+    if (event.target == infoPopup) {
+      infoPopup.classList.remove("commodity__info-popup-wrapper--active");
+    }
+  });

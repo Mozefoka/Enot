@@ -1,5 +1,5 @@
 .commodity {
-  padding: 0 20px;
+  padding: 0 40px;
 }
 .commodity__title {
   font-size: 40px;
@@ -88,7 +88,7 @@
 }
 .commodity__info-popup {
   position: relative;
-  max-width: 300px;
+  max-width: 600px;
   width: 100%;
   padding: 20px;
   margin: 35vh auto;
