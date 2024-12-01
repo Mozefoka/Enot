@@ -166,11 +166,13 @@
     }
 
     #buttonCountMinus {
-        margin-bottom: 5px;
+        display: inline-block;
+        padding: 0 0 7px 0;
     }
 
     #buttonCountPlus {
-        margin-bottom: 2px;
+        display: inline-block;
+        padding: 4px 0 5px 0;
     }
 
     &__info-btn {
