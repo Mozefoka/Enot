@@ -53,7 +53,6 @@
     </header>
 
     <main class="main">
-        <div class="container">
             <section class="commodity">
                 <ul class="breadcrumbs breadcrumbs--padding-none">
                     <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="../index.html">Главная</a>
@@ -227,13 +226,22 @@
                             </div>
                         </div>
 
-                        <a class="commodity__info-btn" onclick="popup()">Оформить заказ</a>
+                        <div class="commodity__info-btns">
+                            <div class="commodity__info-counter">
+                                <input type="button" id="buttonCountMinus" value="-">
+                                <div id="buttonCountNumber">1</div>
+                                <input type="button" id="buttonCountPlus" value="+">
+                                <input type="hidden" value="1" id="num" name="num">
+                            </div>
+
+                            <a class="commodity__info-btn" onclick="popup()">Оформить заказ</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="commodity__properties">
                     <div class="commodity__properties-btns">
-                        <button class="commodity__properties-btn">Характеристики</button>
+                        <button class="commodity__properties-btn commodity__properties-btn--active">Характеристики</button>
                         <button class="commodity__properties-btn">Описание</button>
                     </div>
 
@@ -369,7 +377,6 @@
                     </div>
                 </div>
             </section>
-        </div>
     </main>
 
     <footer class="footer">
