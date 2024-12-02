@@ -28,7 +28,7 @@
 .floor-covering {
   display: flex;
   gap: 30px;
-  padding: 0 4px;
+  padding: 0 40px;
   margin-top: 30px;
 }
 @media (max-width: 700px) {
@@ -50,7 +50,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 10px;
+  padding: 22px 10px;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
 }
@@ -82,11 +82,26 @@
   margin-left: 10px;
   padding: 5px 0;
   list-style: none;
+  transition: all 0.3s;
+}
+.floor-covering__filter-item-title::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  padding: 10px 13px 0 0;
+  background-image: url("/icons/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  transform: rotate(90deg);
+  transition: all 0.3s;
 }
 .floor-covering__filter-item-brand {
   display: flex;
   gap: 10px;
   margin-bottom: 5px;
+}
+.floor-covering__filter-item-brand input::after {
+  display: none;
 }
 .floor-covering__filter-btn {
   text-align: center;
@@ -109,7 +124,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px;
+  padding: 19px 10px;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
 }
