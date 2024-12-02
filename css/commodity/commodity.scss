@@ -70,7 +70,6 @@
         max-width: 640px;
         width: 100%;
         height: 650px;
-        font-family: "Manrope", sans-serif;
 
         @media (max-width: 1200px) {
             height: 618px;
@@ -253,7 +252,6 @@
     padding: 20px 50px;
     color: #f7f7f7;
     background-color: #9e9e9e;
-    font-family: "Manrope", sans-serif;
 }
 
 .tabs-nav__item.is-active {
@@ -265,6 +263,6 @@
 .tab {
 	display: none;
 	padding: 20px;
-    font-family: "Manrope", sans-serif;
 }
+
 .tab.is-active { display: block; }

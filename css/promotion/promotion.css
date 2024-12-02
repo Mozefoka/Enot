@@ -35,13 +35,11 @@
 .promotion__text {
   font-size: 18px;
   font-weight: 500;
-  font-family: "Manrope", Arial, sans-serif;
   line-height: 1.5;
   margin-bottom: 30px;
 }
 .promotion__btn {
   display: inline-block;
-  font-family: "Manrope", Arial, sans-serif;
   background-color: #159947;
   color: #fff;
   padding: 18px 40px;

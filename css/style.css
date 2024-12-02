@@ -4,7 +4,7 @@ html {
 
 body {
   font-weight: 300;
-  font-family: "Oswald", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 a {
@@ -126,6 +126,7 @@ input[type=range] {
   align-items: center;
   gap: 10px;
   padding: 20px 0 20px 40px;
+  font-family: "Oswald", sans-serif;
   margin-bottom: 30px;
 }
 .breadcrumbs__item :after {
@@ -149,6 +150,7 @@ input[type=range] {
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
+  font-family: "Oswald", sans-serif;
   margin-bottom: 10px;
 }
 .header__logo {
@@ -275,7 +277,6 @@ input[type=range] {
   background-color: #fff;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
   font-size: 14px;
-  font-family: "Manrope", sans-serif;
   text-align: center;
   z-index: 5;
 }
@@ -607,13 +608,11 @@ input[type=range] {
 }
 .contact-us__communication-location {
   font-size: 20px;
-  font-family: "Manrope", sans-serif;
   line-height: 1.55;
   margin-bottom: 15px;
 }
 .contact-us__communication-request {
   font-size: 20px;
-  font-family: "Manrope", sans-serif;
   line-height: 1.55;
   margin-bottom: 30px;
 }

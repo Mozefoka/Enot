@@ -28,7 +28,7 @@
 .floor-covering {
   display: flex;
   gap: 30px;
-  padding: 0 40px;
+  padding: 0 4px;
   margin-top: 30px;
 }
 @media (max-width: 700px) {

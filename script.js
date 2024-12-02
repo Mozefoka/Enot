@@ -16,6 +16,40 @@ let buttonCountMinus = document.getElementById("buttonCountMinus");
 let count = document.getElementById("buttonCountNumber");
 let number = 1;
 
+// buttonCountPlus.addEventListener('click', () => {
+//         number++;
+//         count.innerHTML = number;
+// });
+
+// buttonCountMinus.addEventListener('click', () => {
+//    if (number >= 2) {
+//        number--;
+//        count.innerHTML = number;
+//     }
+// });
+
+burger.addEventListener('click', function() {
+	burger.classList.toggle("header__burger--active");
+	line1.classList.toggle("header__burger-line1--active");
+	line2.classList.toggle("header__burger-line2--active");
+	line3.classList.toggle("header__burger-line3--active");
+	menu.classList.toggle("header__menu--active");
+});
+
+function addActive() {
+	promotionsItem.classList.toggle("header__menu-list-promotions-item--active");
+};
+
+function popup() {
+	infoPopup.classList.toggle("commodity__info-popup-wrapper--active");
+};
+
+window.addEventListener("click", (event) => {
+    if (event.target == infoPopup) {
+      infoPopup.classList.remove("commodity__info-popup-wrapper--active");
+    }
+});
+
 let tab = function () {
   let tabNav = document.querySelectorAll('.tabs-nav__item'),
       tabContent = document.querySelectorAll('.tab'),
@@ -39,42 +73,6 @@ let tab = function () {
           item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active');
       })
   }
-
 };
-
 
 tab();
-
-buttonCountPlus.addEventListener('click', () => {
-        number++;
-        count.innerHTML = number;
-});
-
-buttonCountMinus.addEventListener('click', () => {
-   if (number >= 2) {
-       number--;
-       count.innerHTML = number;
-    }
-});
-
-burger.addEventListener('click', function() {
-	burger.classList.toggle("header__burger--active");
-	line1.classList.toggle("header__burger-line1--active");
-	line2.classList.toggle("header__burger-line2--active");
-	line3.classList.toggle("header__burger-line3--active");
-	menu.classList.toggle("header__menu--active");
-});
-
-function addActive() {
-	promotionsItem.classList.toggle("header__menu-list-promotions-item--active");
-};
-
-function popup() {
-	infoPopup.classList.toggle("commodity__info-popup-wrapper--active");
-};
-
-window.addEventListener("click", (event) => {
-    if (event.target == infoPopup) {
-      infoPopup.classList.remove("commodity__info-popup-wrapper--active");
-    }
-});
