@@ -21,7 +21,7 @@
   }
 }
 .commodity__content-item-images {
-  max-width: 900px;
+  max-width: 800px;
   width: 100%;
 }
 @media (max-width: 1200px) {
@@ -63,7 +63,7 @@
 .commodity__content-item-info {
   position: relative;
   width: 100%;
-  height: 673px;
+  height: 650px;
 }
 @media (max-width: 1200px) {
   .commodity__content-item-info {
@@ -120,7 +120,7 @@
 .commodity__info-text {
   display: flex;
   justify-content: space-between;
-  padding: 14px 10px;
+  padding: 13px 10px;
   font-size: 16px;
   background-color: #f7f7f7;
   margin-bottom: 3px;
@@ -163,43 +163,6 @@
   color: #fff;
   background-color: #159947;
 }
-.commodity__properties-btns {
-  background-color: #f7f7f7;
-  margin-bottom: 30px;
-}
-.commodity__properties-btn {
-  width: 200px;
-  padding: 20px 50px;
-  color: #9e9e9e;
-}
-.commodity__properties-btn--active {
-  color: #22ad5c;
-  background-color: rgba(34, 173, 92, 0.1);
-  border-bottom: 3px solid #22ad5c;
-}
-.commodity__properties-characteristics {
-  display: none;
-}
-.commodity__properties-characteristics--active {
-  display: block;
-}
-.commodity__properties-description {
-  display: none;
-}
-.commodity__properties-description--active {
-  display: block;
-  font-size: 15px;
-  font-family: "Manrope", sans-serif;
-  line-height: 1.5;
-  margin-bottom: 40px;
-}
-@media (max-width: 969px) {
-  .commodity__properties-description--active {
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
-  }
-}
 .commodity__properties-title {
   font-size: 16px;
   margin-bottom: 30px;
@@ -208,6 +171,7 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: space-between;
+  gap: 10px;
   margin-bottom: 40px;
 }
 @media (max-width: 520px) {
@@ -229,9 +193,6 @@
   gap: 40px;
   margin-bottom: 20px;
 }
-.commodity__properties-characteristics-info-name {
-  color: #9e9e9e;
-}
 .commodity__properties-download-btns {
   display: flex;
   gap: 20px;
@@ -243,4 +204,33 @@
   padding: 3px 5px 4px 25px;
   background-image: url(/icons/file.png);
   background-repeat: no-repeat;
+}
+.tabs-nav {
+  display: flex;
+  gap: 5px;
+  text-align: center;
+  background-color: #f7f7f7;
+  margin-bottom: 30px;
+}
+
+.tabs-nav__item {
+  width: 200px;
+  padding: 20px 50px;
+  color: #f7f7f7;
+  background-color: #9e9e9e;
+}
+
+.tabs-nav__item.is-active {
+  color: #22ad5c;
+  background-color: rgba(34, 173, 92, 0.1);
+  border-bottom: 3px solid #22ad5c;
+}
+
+.tab {
+  display: none;
+  padding: 20px;
+}
+
+.tab.is-active {
+  display: block;
 }/*# sourceMappingURL=commodity.css.map */
