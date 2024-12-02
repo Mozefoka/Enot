@@ -9,6 +9,7 @@
 }
 .commodity__content {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   margin-bottom: 100px;
@@ -62,8 +63,10 @@
 }
 .commodity__content-item-info {
   position: relative;
+  max-width: 640px;
   width: 100%;
   height: 650px;
+  font-family: "Manrope", sans-serif;
 }
 @media (max-width: 1200px) {
   .commodity__content-item-info {
@@ -117,6 +120,11 @@
   color: #fff;
   background-color: #797979;
 }
+@media (max-width: 1200px) {
+  .commodity__info-title {
+    padding: 12px 10px;
+  }
+}
 .commodity__info-text {
   display: flex;
   justify-content: space-between;
@@ -124,6 +132,11 @@
   font-size: 16px;
   background-color: #f7f7f7;
   margin-bottom: 3px;
+}
+@media (max-width: 1200px) {
+  .commodity__info-text {
+    padding: 12px 10px;
+  }
 }
 .commodity__info-text--color {
   color: #159947;
@@ -157,7 +170,7 @@
   padding: 4px 0 5px 0;
 }
 .commodity__info-btn {
-  max-width: 160px;
+  max-width: 187px;
   width: 100%;
   padding: 18px 40px;
   color: #fff;
@@ -205,6 +218,7 @@
   background-image: url(/icons/file.png);
   background-repeat: no-repeat;
 }
+
 .tabs-nav {
   display: flex;
   gap: 5px;
@@ -214,10 +228,10 @@
 }
 
 .tabs-nav__item {
-  width: 200px;
   padding: 20px 50px;
   color: #f7f7f7;
   background-color: #9e9e9e;
+  font-family: "Manrope", sans-serif;
 }
 
 .tabs-nav__item.is-active {
@@ -229,6 +243,7 @@
 .tab {
   display: none;
   padding: 20px;
+  font-family: "Manrope", sans-serif;
 }
 
 .tab.is-active {
