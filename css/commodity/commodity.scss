@@ -99,7 +99,7 @@
         padding: 20px;
         margin: 35vh auto;
         bottom: 75px;
-        left: 30px;
+        left: 20px;
         border-radius: 5px;
         background: #fff;
         text-align: center;
@@ -112,6 +112,11 @@
         button {
             margin-top: 20px;
         }
+
+        @media (max-width: 800px) {
+            left: 5px;
+        }
+        
     }
 
     &__info-popup-wrapper--active {
@@ -205,7 +210,7 @@
             gap: 10px;
             margin-bottom: 40px;
 
-            @media (max-width: 520px) {
+            @media (max-width: 720px) {
                 grid-template-columns: repeat(2, auto);
             }
             
@@ -214,7 +219,11 @@
 		&__properties-characteristics-info--margin-top {
             margin-top: 40px;
 
-            @media (max-width: 520px) {
+            @media (max-width: 970px) {
+                margin-top: 47px;
+            }
+
+            @media (max-width: 720px) {
                 order: 2;
                 margin-top: 0;
             }
