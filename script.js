@@ -7,7 +7,6 @@ const line3 = document.querySelector(".header__burger-line3");
 const menu = document.querySelector(".header__menu");
 const promotions = document.querySelector(".header__menu-list-promotions-btn");
 const promotionsItem = document.querySelector(".header__menu-list-promotions-item");
-const questionsList = document.querySelector(".questions__list");
 const filterForm = document.querySelector(".floor-covering__filter");
 const filterReset = document.querySelector(".floor-covering__filter-reset");
 const infoPopup = document.querySelector(".commodity__info-popup-wrapper");
@@ -16,17 +15,17 @@ let buttonCountMinus = document.getElementById("buttonCountMinus");
 let count = document.getElementById("buttonCountNumber");
 let number = 1;
 
-// buttonCountPlus.addEventListener('click', () => {
-//         number++;
-//         count.innerHTML = number;
-// });
+buttonCountPlus?.addEventListener('click', () => {
+        number++;
+        count.innerHTML = number;
+});
 
-// buttonCountMinus.addEventListener('click', () => {
-//    if (number >= 2) {
-//        number--;
-//        count.innerHTML = number;
-//     }
-// });
+buttonCountMinus?.addEventListener('click', () => {
+   if (number >= 2) {
+       number--;
+       count.innerHTML = number;
+    }
+});
 
 burger.addEventListener('click', function() {
 	burger.classList.toggle("header__burger--active");

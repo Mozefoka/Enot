@@ -97,7 +97,7 @@
   margin-bottom: 30px;
 }
 .floor-covering__filter-reset {
-  background-image: url("../icons/reset.png");
+  background-image: url("/icons/reset.png");
   background-repeat: no-repeat;
   background-size: 15px;
   padding: 0 0 1px 20px;
@@ -131,7 +131,7 @@
   position: absolute;
   right: 15px;
   padding: 10px 13px 0 0;
-  background-image: url("../icons/arrow.png");
+  background-image: url("/icons/arrow.png");
   background-repeat: no-repeat;
   background-size: 15px;
   transform: rotate(90deg);
