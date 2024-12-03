@@ -1,3 +1,48 @@
+.noUi-target {
+    padding-right: 10px;
+}
+
+.noUi-connect {
+    background: #159947;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 25px;
+    height: 28px;
+    right: -17px;
+    top: -6px;
+}
+
+.noUi-handle {
+    border-radius: 50%;
+
+    &::after {
+        display: none;
+    }
+
+    &::before {
+        display: none;
+    }
+}
+
+.slider-snap-values {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+
+    label {
+        margin-right: 5px;
+    }
+
+    input {
+        width: 60px;
+        padding: 10px;
+        border: 1px solid #dfdfdf;
+        text-align: center;
+    }
+}
+
 .filts-n-view {
     display: none;
 
