@@ -13,6 +13,7 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
+        padding: 0 15px;
         margin-bottom: 100px;
 
         @media (max-width: 969px) {
@@ -20,7 +21,10 @@
             align-items: center;
             margin-bottom: 230px;
         }
-        
+
+        @media (max-width: 520px) {
+            margin-bottom: 300px;
+        }
     }
 
     &__content-item-images {
@@ -98,7 +102,7 @@
         width: 100%;
         padding: 20px;
         margin: 35vh auto;
-        bottom: 75px;
+        bottom: 135px;
         left: 20px;
         border-radius: 5px;
         background: #fff;
@@ -114,7 +118,7 @@
         }
 
         @media (max-width: 800px) {
-            left: 5px;
+            left: 0;
         }
         
     }
@@ -160,6 +164,11 @@
         display: flex;
         justify-content: center;
         gap: 10px;
+
+        @media (max-width: 520px) {
+            flex-wrap: wrap;
+        }
+        
     }
 
     &__info-counter {
@@ -171,6 +180,7 @@
     }
 
     &__info-counter__pack {
+        height: 35px;
         display: flex;
         align-items: center;
         text-align: center;
@@ -180,9 +190,19 @@
             width: 100%;
             font-size: 25px;
         }
+    }
+
+    &__info-counter__area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 125px;
+        height: 35px;
+        text-align: center;
+        background-color: #f0f0f0;
 
         div {
-            width: 100%;
+           
         }
     }
 
@@ -190,14 +210,6 @@
         font-size: 14px;
         text-align: center;
         background-color: #f0f0f0;
-    }
-
-    #buttonCountMinus {
-        padding: 0 0 7px 0;
-    }
-
-    #buttonCountPlus {
-        padding: 4px 0 5px 0;
     }
 
     &__info-btn {
@@ -220,7 +232,6 @@
             grid-template-columns: repeat(3, auto);
             justify-content: space-between;
             gap: 10px;
-            margin-bottom: 40px;
 
             @media (max-width: 720px) {
                 grid-template-columns: repeat(2, auto);
@@ -262,6 +273,14 @@
         }
 }
 
+.tab {
+    display: none;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.tab.is-active { display: block; }
+
 .tabs-nav {
 	display: flex;
 	gap: 5px;
@@ -269,8 +288,11 @@
     background-color: #f7f7f7;
     margin-bottom: 30px;
 }
+
 .tabs-nav__item {
-    padding: 20px 50px;
+    max-width: 200px;
+    width: 100%;
+    padding: 20px 0;
     color: #f7f7f7;
     background-color: #9e9e9e;
 }
@@ -280,10 +302,3 @@
     background-color: rgba(34, 173, 92, 0.1);
     border-bottom: 3px solid #22ad5c;
 }
-
-.tab {
-	display: none;
-	padding: 20px;
-}
-
-.tab.is-active { display: block; }
