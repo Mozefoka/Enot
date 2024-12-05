@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link href="../noUiSlider/dist/nouislider.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/floor-covering/floor-covering.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +35,7 @@
 
                 <li class="header__menu-list-promotions">
                     <a class="header__menu-list-promotions-btn" onclick="addActive()">Акции</a>
-                    
+
                     <div class="header__menu-list-promotions-item">
                         <a href="../pages/promotion-march.html">Акция к 8 марта</a>
                         <a href="../pages/promotion-new-year.html">Новогодняя акция</a>
@@ -52,180 +53,12 @@
     </header>
 
     <main class="main">
-        <div class="container">
             <ul class="breadcrumbs">
                 <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="../index.html">Главная</a></li>
-                <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="../pages/catalog.html">Каталог</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="../pages/catalog.html">Каталог</a>
+                </li>
                 <li><a class="breadcrumbs__item-link--color">Пробковые напольные покрытия</a></li>
             </ul>
-
-            <div class="filts-n-view">
-                <div class="filts">
-                    <details>
-                        <summary class="floor-covering__filter-title">Фильтры</summary>
-                        <button class="floor-covering__filter-reset">Сбросить</button>
-
-
-                        <details class="floor-covering__filter-item">
-                            <summary class="floor-covering__filter-item-title">Сортировка</summary>
-
-                            <div class="floor-covering__options-btns">
-                                <select class="floor-covering__options-sorting-btn">
-                                    <option value="" selected>По умолчанию</option>
-                                </select>
-                            </div>
-                        </details>
-
-                        <details open class="floor-covering__filter-item">
-                            <summary class="floor-covering__filter-item-title">Цена</summary>
-                            <input type="range">
-                        </details>
-
-                        <details class="floor-covering__filter-item">
-                            <summary class="floor-covering__filter-item-title">Бренд</summary>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-
-                            <div class="floor-covering__filter-item-brand">
-                                <label for="f"></label>
-                                <input type="checkbox" name="f">dd
-                            </div>
-                        </details>
-
-                        <details class="floor-covering__filter-item">
-                            <summary class="floor-covering__filter-item-title">Страна производтства</summary>
-                        </details>
-
-                        <details class="floor-covering__filter-item">
-                            <summary class="floor-covering__filter-item-title">Цена</summary>
-                        </details>
-
-                        <details class="floor-covering__filter-item">
-                            <summary class="floor-covering__filter-item-title">Цена</summary>
-                        </details>
-
-                        <details class="floor-covering__filter-item">
-                            <summary class="floor-covering__filter-item-title">Цена</summary>
-                        </details>
-
-                        <details class="floor-covering__filter-item">
-                            <summary class="floor-covering__filter-item-title">Цена</summary>
-                        </details>
-
-                        <details class="floor-covering__filter-item">
-                            <summary class="floor-covering__filter-item-title">Цена</summary>
-                        </details>
-
-                    <div class="floor-covering__filter-btn"><button>Применить</button></div>
-                    </details>
-                </div>
-
-                <div class="view">
-                    <div class="floor-covering__options-btns">
-                        <div class="floor-covering__options-lines">
-                            <span class="floor-covering__options-line"></span>
-                            <span class="floor-covering__options-line"></span>
-                            <span class="floor-covering__options-line"></span>
-                            <span class="floor-covering__options-line"></span>
-                        </div>
-    
-                        <button class="floor-covering__options-cube"><img src="../icons/square.png" alt="square"></button>
-                    </div>
-                </div>
-            </div>
 
             <section class="floor-covering">
                 <form class="floor-covering__filter">
@@ -237,7 +70,20 @@
                     <div class="floor-covering__filter-block">
                         <details class="floor-covering__filter-item" open>
                             <summary class="floor-covering__filter-item-title">Цена</summary>
-                            <input type="range" id="slider-snap">
+
+                            <div class="slider-snap-values">
+                                <div class="slider-snap-values-min"> 
+                                    <label for="min">От</label>
+                                    <input name="min" id="sliderSnapMin">
+                                </div>
+
+                                <div class="slider-snap-values-max">
+                                    <label for="max">До</label>
+                                    <input name="max" id="sliderSnapMax">
+                                </div>
+                            </div>
+
+                            <div id="slider-snap"></div>
                         </details>
 
                         <details class="floor-covering__filter-item">
@@ -372,18 +218,203 @@
                     <div class="floor-covering__filter-btn"><button>Применить</button></div>
                 </form>
 
-                <div class="floor-covering__content">
-                    <div class="floor-covering__options">
-
-                        <div class="floor-covering__options-btns">
+                <div class="floor-covering__filter-mobile-wrapper">
+                    <form class="floor-covering__filter-mobile">
+                        <details>
+                            <summary class="floor-covering__filter-title">Фильтры</summary>
+                            <button class="floor-covering__filter-reset">Сбросить</button>
+    
+    
+                            <details class="floor-covering__filter-item">
+                                <summary class="floor-covering__filter-item-title">Сортировка</summary>
+    
+                                <div class="floor-covering__options-btns">
+                                    <select class="floor-covering__options-sorting-btn">
+                                        <option value="" selected>По умолчанию</option>
+                                    </select>
+                                </div>
+                            </details>
+    
+                            <details open class="floor-covering__filter-item">
+                                <summary class="floor-covering__filter-item-title">Цена</summary>
+    
+                                <div class="slider-snap-values">
+                                    <div class="slider-snap-values-min"> 
+                                        <label for="minMobile">От</label>
+                                        <input name="minMobile" id="sliderSnapMinMobile">
+                                    </div>
+    
+                                    <div class="slider-snap-values-max">
+                                        <label for="maxMobile">До</label>
+                                        <input name="maxMobile" id="sliderSnapMaxMobile">
+                                    </div>
+                                </div>
+    
+                                <div id="slider-snap-mobile"></div>
+                            </details>
+    
+                            <details class="floor-covering__filter-item">
+                                <summary class="floor-covering__filter-item-title">Бренд</summary>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+    
+                                <div class="floor-covering__filter-item-brand">
+                                    <label for="f"></label>
+                                    <input type="checkbox" name="f">dd
+                                </div>
+                            </details>
+    
+                            <details class="floor-covering__filter-item">
+                                <summary class="floor-covering__filter-item-title">Страна производтства</summary>
+                            </details>
+    
+                            <details class="floor-covering__filter-item">
+                                <summary class="floor-covering__filter-item-title">Цена</summary>
+                            </details>
+    
+                            <details class="floor-covering__filter-item">
+                                <summary class="floor-covering__filter-item-title">Цена</summary>
+                            </details>
+    
+                            <details class="floor-covering__filter-item">
+                                <summary class="floor-covering__filter-item-title">Цена</summary>
+                            </details>
+    
+                            <details class="floor-covering__filter-item">
+                                <summary class="floor-covering__filter-item-title">Цена</summary>
+                            </details>
+    
+                            <details class="floor-covering__filter-item">
+                                <summary class="floor-covering__filter-item-title">Цена</summary>
+                            </details>
+    
+                            <div class="floor-covering__filter-btn"><button>Применить</button></div>
+                        </details>
+                    </form>
+    
+                    <div class="view">
+                        <!-- <div class="floor-covering__options-btns">
                             <div class="floor-covering__options-lines">
                                 <span class="floor-covering__options-line"></span>
                                 <span class="floor-covering__options-line"></span>
                                 <span class="floor-covering__options-line"></span>
                                 <span class="floor-covering__options-line"></span>
                             </div>
+    
+                            <button class="floor-covering__options-cube">
+                                <img src="../icons/square.png" alt="square">
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
 
-                            <button class="floor-covering__options-cube"><img src="../icons/square.png" alt="square"></button>
+                <div class="floor-covering__content">
+                    <div class="floor-covering__options">
+
+                        <div class="floor-covering__options-btns">
+                            <!-- <div class="floor-covering__options-lines">
+                                <span class="floor-covering__options-line"></span>
+                                <span class="floor-covering__options-line"></span>
+                                <span class="floor-covering__options-line"></span>
+                                <span class="floor-covering__options-line"></span>
+                            </div> -->
+
+                            <button class="floor-covering__options-cube"><img src="../icons/square.png"
+                                    alt="square">
+                            </button>
                         </div>
 
                         <div class="floor-covering__options-sorting">
@@ -416,7 +447,39 @@
                             <p class="floor-covering__content-card-name">Verde Avila</p>
                             <div class="floor-covering__content-card-price">
                                 <p>2667,68 ₽ /1 м<sup>2</sup></p>
-                                <p class="floor-covering__content-card-price--color">2667,68 ₽ /1 м<sup>2</sup></p>
+                            </div>
+                        </a>
+
+                        <a class="floor-covering__content-card" href="../pages/commodity.html">
+                            <div class="floor-covering__content-card-img">
+                                <img src="../images/33417846.jpg" alt="floor">
+                            </div>
+                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
+                            <p class="floor-covering__content-card-name">Verde Avila</p>
+                            <div class="floor-covering__content-card-price">
+                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
+                            </div>
+                        </a>
+
+                        <a class="floor-covering__content-card" href="../pages/commodity.html">
+                            <div class="floor-covering__content-card-img">
+                                <img src="../images/33417846.jpg" alt="floor">
+                            </div>
+                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
+                            <p class="floor-covering__content-card-name">Verde Avila</p>
+                            <div class="floor-covering__content-card-price">
+                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
+                            </div>
+                        </a>
+
+                        <a class="floor-covering__content-card" href="../pages/commodity.html">
+                            <div class="floor-covering__content-card-img">
+                                <img src="../images/33417846.jpg" alt="floor">
+                            </div>
+                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
+                            <p class="floor-covering__content-card-name">Verde Avila</p>
+                            <div class="floor-covering__content-card-price">
+                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
                             </div>
                         </a>
 
@@ -440,7 +503,6 @@
                             <p class="floor-covering__content-card-name">Verde Avila</p>
                             <div class="floor-covering__content-card-price">
                                 <p>2667,68 ₽ /1 м<sup>2</sup></p>
-                                <p class="floor-covering__content-card-price--color">2667,68 ₽ /1 м<sup>2</sup></p>
                             </div>
                         </a>
 
@@ -452,7 +514,6 @@
                             <p class="floor-covering__content-card-name">Verde Avila</p>
                             <div class="floor-covering__content-card-price">
                                 <p>2667,68 ₽ /1 м<sup>2</sup></p>
-                                <p class="floor-covering__content-card-price--color">2667,68 ₽ /1 м<sup>2</sup></p>
                             </div>
                         </a>
 
@@ -464,43 +525,6 @@
                             <p class="floor-covering__content-card-name">Verde Avila</p>
                             <div class="floor-covering__content-card-price">
                                 <p>2667,68 ₽ /1 м<sup>2</sup></p>
-                                <p class="floor-covering__content-card-price--color">2667,68 ₽ /1 м<sup>2</sup></p>
-                            </div>
-                        </a>
-
-                        <a class="floor-covering__content-card" href="../pages/commodity.html">
-                            <div class="floor-covering__content-card-img">
-                                <img src="../images/33417846.jpg" alt="floor">
-                            </div>
-                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
-                            <p class="floor-covering__content-card-name">Verde Avila</p>
-                            <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
-                                <p class="floor-covering__content-card-price--color">2667,68 ₽ /1 м<sup>2</sup></p>
-                            </div>
-                        </a>
-
-                        <a class="floor-covering__content-card" href="../pages/commodity.html">
-                            <div class="floor-covering__content-card-img">
-                                <img src="../images/33417846.jpg" alt="floor">
-                            </div>
-                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
-                            <p class="floor-covering__content-card-name">Verde Avila</p>
-                            <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
-                                <p class="floor-covering__content-card-price--color">2667,68 ₽ /1 м<sup>2</sup></p>
-                            </div>
-                        </a>
-
-                        <a class="floor-covering__content-card" href="../pages/commodity.html">
-                            <div class="floor-covering__content-card-img">
-                                <img src="../images/33417846.jpg" alt="floor">
-                            </div>
-                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
-                            <p class="floor-covering__content-card-name">Verde Avila</p>
-                            <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
-                                <p class="floor-covering__content-card-price--color">2667,68 ₽ /1 м<sup>2</sup></p>
                             </div>
                         </a>
 
@@ -540,7 +564,7 @@
                             </div>
                         </a>
                     </div>
-                    
+
                     <div class="floor-covering__pages">
                         <a href="../pages/floor-covering2.html"><</a>
                         <a href="../pages/floor-covering.html">1</a>
@@ -550,7 +574,6 @@
                     </div>
                 </div>
             </section>
-        </div>
     </main>
 
     <footer class="footer">
@@ -602,6 +625,7 @@
     </footer>
 
     <script src="../script.js"></script>
+    <script src="../noUiSlider/dist/nouislider.min.js"></script>
 </body>
 
 </html>
