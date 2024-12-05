@@ -201,6 +201,7 @@
   padding: 12px 40px;
   color: #fff;
   background-color: #159947;
+  cursor: pointer;
 }
 .commodity__properties-title {
   font-size: 16px;
