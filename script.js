@@ -17,13 +17,13 @@ let number = 1;
 
 buttonCountPlus?.addEventListener('click', () => {
         number++;
-        count.innerHTML = number;
+        count.value = number;
 });
 
 buttonCountMinus?.addEventListener('click', () => {
    if (number >= 2) {
        number--;
-       count.innerHTML = number;
+       count.value = number;
     }
 });
 
