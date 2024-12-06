@@ -532,11 +532,6 @@ input[type=range] {
   background-color: #f3f3f3;
   margin-bottom: 2px;
 }
-@media (max-width: 590px) {
-  .questions__list-item {
-    padding: 25px 40px 25px 15px;
-  }
-}
 .questions__list-item[open] ::after {
   transform: rotate(-45deg);
 }
