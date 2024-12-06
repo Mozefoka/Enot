@@ -28,7 +28,7 @@
     }
 
     &__content-item-images {
-        max-width: 800px;
+        max-width: 930px;
         width: 100%;
 
         @media (max-width: 1200px) {
@@ -71,9 +71,7 @@
 
     &__content-item-info {
         position: relative;
-        max-width: 640px;
-        width: 100%;
-        height: 650px;
+        height: 683px;
 
         @media (max-width: 1200px) {
             height: 618px;
@@ -81,6 +79,7 @@
 
         @media (max-width: 969px) {
             max-width: 720px;
+            width: 100%;
             padding-top: 40px;
         }
     }
@@ -127,12 +126,8 @@
         display: block;
     }
 
-    &__info {
-        margin-bottom: 26px;
-    }
-
     &__info-title {
-        padding: 15px 10px;
+        padding: 13px 10px;
         font-size: 18px;
         color: #fff;
         background-color: #797979;
@@ -161,58 +156,88 @@
     }
 
     &__info-btns {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
+        margin-top: 20px;
 
         @media (max-width: 520px) {
             flex-wrap: wrap;
         }
-        
+    }
+
+    &__info-btns-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        @media (max-width: 969px) {
+            justify-content: center; 
+         }
+
+        p {
+            padding-top: 16px;
+            font-size: 18px;
+        }
+
+        &--space {
+            @media (max-width: 969px) {
+                justify-content: space-between; 
+             }
+        }
     }
 
     &__info-counter {
         width: 125px;
+
+        @media (max-width: 969px) {
+            width: 100%;
+        }
     }
 
     &__info-counter-title {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
-    &__info-counter__pack {
+    &__info-counter__btns {
         height: 35px;
         display: flex;
         align-items: center;
         text-align: center;
-        background-color: #f0f0f0;
+        border-bottom: 1px solid #000;
+
 
         input {
             width: 100%;
             font-size: 25px;
+            background-color: #fff;
         }
     }
 
-    &__info-counter__area {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 125px;
-        height: 35px;
+    &__info-counter-value {
+        padding: 5px 0;
+        font-size: 16px !important;
         text-align: center;
         background-color: #f0f0f0;
     }
 
-    #buttonCountNumber {
-        font-size: 14px;
+    &__info-counter-stock {
+        height: 35px;
+        width: 100%;
+        height: 35px;
+        margin-top: 14px;
+        border-bottom: 1px solid #000;
         text-align: center;
-        background-color: #f0f0f0;
+        appearance: none;
+
+        @media (max-width: 969px) {
+            margin-top: 0;
+        }
     }
 
     &__info-btn {
         max-width: 187px;
         width: 100%;
         height: 40px;
-        margin-top: 30px;
+        margin-top: 17px;
         padding: 12px 40px;
         color: #fff;
         background-color: #159947;

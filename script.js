@@ -10,10 +10,14 @@ const promotionsItem = document.querySelector(".header__menu-list-promotions-ite
 const filterForm = document.querySelector(".floor-covering__filter");
 const filterReset = document.querySelector(".floor-covering__filter-reset");
 const infoPopup = document.querySelector(".commodity__info-popup-wrapper");
-let buttonCountPlus = document.getElementById("buttonCountPlus");
-let buttonCountMinus = document.getElementById("buttonCountMinus");
-let count = document.getElementById("buttonCountNumber");
+const buttonCountPlus = document.getElementById("buttonCountPlus");
+const buttonCountMinus = document.getElementById("buttonCountMinus");
+const count = document.getElementById("buttonCountNumber");
 let number = 1;
+const buttonCountPlusArea = document.getElementById("buttonCountPlusArea");
+const buttonCountMinusArea = document.getElementById("buttonCountMinusArea");
+const countArea = document.getElementById("buttonCountNumberArea");
+let numberArea = 1;
 
 buttonCountPlus?.addEventListener('click', () => {
         number++;
@@ -24,6 +28,18 @@ buttonCountMinus?.addEventListener('click', () => {
    if (number >= 2) {
        number--;
        count.value = number;
+    }
+
+});
+buttonCountPlusArea?.addEventListener('click', () => {
+        numberArea++;
+        countArea.value = numberArea;
+});
+
+buttonCountMinusArea?.addEventListener('click', () => {
+   if (numberArea >= 2) {
+       numberArea--;
+       countArea.value = numberArea;
     }
 });
 
