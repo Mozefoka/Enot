@@ -532,6 +532,12 @@ input[type=range] {
   background-color: #f3f3f3;
   margin-bottom: 2px;
 }
+.questions__list-item summary {
+  list-style: none;
+  list-style-type: none;
+  list-style-image: none;
+  -webkit-list-style: none;
+}
 .questions__list-item[open] ::after {
   transform: rotate(-45deg);
 }
@@ -539,6 +545,9 @@ input[type=range] {
   padding: 25px 0;
   font-weight: 700;
   list-style: none;
+  list-style-type: none;
+  list-style-image: none;
+  -webkit-list-style: none;
   transition: all 0.3s;
 }
 .questions__list-item-title::after {
