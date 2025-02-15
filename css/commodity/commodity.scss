@@ -244,7 +244,8 @@
         border: 1px solid #159947;
         background-color: #f0f0f0;
         text-align: center;
-        -webkit-text-align: center;
+        text-align-last: center;
+        direction: rtl;
         appearance: none;
 
         @media (max-width: 969px) {
@@ -283,6 +284,7 @@
         padding: 5px 0;
         font-size: 16px !important;
         text-align: center;
+        color: black;
         background-color: #f0f0f0;
 
         @media (max-width: 435px) {
