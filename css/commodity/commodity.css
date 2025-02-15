@@ -237,6 +237,7 @@
   border: 1px solid #159947;
   background-color: #f0f0f0;
   text-align: center;
+  -webkit-text-align: center;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
