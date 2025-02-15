@@ -203,10 +203,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 10px;
 
         @media (max-width: 969px) {
             justify-content: center; 
+         }
+
+         div + div {
+            margin-left: 10px;
          }
     }
 
@@ -251,6 +254,7 @@
         text-align-last: center;
         direction: rtl;
         appearance: none;
+        -webkit-appearance: none;
 
         @media (max-width: 969px) {
             margin-top: 0;

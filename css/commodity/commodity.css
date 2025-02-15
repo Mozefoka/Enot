@@ -199,12 +199,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
 }
 @media (max-width: 969px) {
   .commodity__info-btns-item {
     justify-content: center;
   }
+}
+.commodity__info-btns-item div + div {
+  margin-left: 10px;
 }
 .commodity__info-counter {
   width: 125px;
@@ -243,9 +245,9 @@
   -moz-text-align-last: center;
        text-align-last: center;
   direction: rtl;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 @media (max-width: 969px) {
   .commodity__info-counter-stock {
