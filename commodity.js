@@ -7,48 +7,95 @@ const count = document.getElementById("buttonCountNumber");
 const buttonCountPlusArea = document.getElementById("buttonCountPlusArea");
 const buttonCountMinusArea = document.getElementById("buttonCountMinusArea");
 const countArea = document.getElementById("buttonCountNumberArea");
-const area = 0.98;
-const price = document.getElementById("price");
-price.setAttribute('sum', 2500);
-const priceSum = price.getAttribute('sum');
+const productsBtns = document.querySelector(".commodity__info-btns-products");
+const productsBtnsItem = document.querySelector(".first");
+
+let selected = productsBtnsItem;
+
+const firstProduct = {
+    area: 0.98,
+    price: 2500,
+}
+
+const secondProduct = {
+    area: 1,
+    price: 3000,
+}
+
+let price = firstProduct.price;
+let area = firstProduct.area;
+
+addEventListener('click', (event) => {
+    
+    const {target} = event;
+
+    if (target.tagName != 'BUTTON' || target.hasAttribute('selected')) return;
+
+    count.value = 1;
+
+    toggleAttribute(target);
+
+    if (target.classList.contains('first')) {
+        price = firstProduct.price;
+        area = firstProduct.area;
+        countArea.value = firstProduct.area;
+        totalAmount.innerHTML = firstProduct.price;
+
+    } else {
+        price = secondProduct.price;
+        area = secondProduct.area;
+        countArea.value = secondProduct.area;
+        totalAmount.innerHTML = secondProduct.price;
+    }
+});
+
+function toggleAttribute(target) {
+  if (selected) {
+    selected.removeAttribute('selected');
+  }
+  selected = target;
+  selected.setAttribute('selected', 'true');
+}
+
+const totalAmount = document.getElementById("price");
 
 countArea.addEventListener('change', (event) => {
     event.target.value = (Math.round(event.target.value / area) * area).toFixed(2);
     count.value = Math.round(event.target.value / area);
-    price.innerHTML = +priceSum * +count.value;
+    totalAmount.innerHTML = +price * +count.value;
 });
 
 count.addEventListener('change', (event) => {
     event.target.value = Math.round(event.target.value);
     countArea.value = event.target.value * area;
-    price.innerHTML = event.target.value * priceSum;
+    totalAmount.innerHTML = event.target.value * price;
 });
 
 buttonCountPlusArea.addEventListener('click', () => {
     countArea.value = (+countArea.value + area).toFixed(2);
     count.value = +count.value + 1;
-    price.innerHTML = +price.innerHTML + +priceSum;
+    totalAmount.innerHTML = +totalAmount.innerHTML + +price;
 });
 
 buttonCountMinusArea.addEventListener('click', () => {
    if (countArea.value >= 1) {
     countArea.value = (+countArea.value - area).toFixed(2);
     count.value = +count.value - 1;
-    price.innerHTML = +price.innerHTML - +priceSum;
+    totalAmount.innerHTML = +totalAmount.innerHTML - +price;
     }
 });
 
 buttonCountPlus.addEventListener('click', () => {
     count.value = +count.value + 1;
     countArea.value = (+countArea.value + area).toFixed(2);
-    price.innerHTML = +price.innerHTML + +priceSum;
+    totalAmount.innerHTML = +totalAmount.innerHTML + +price;
 });
 
 buttonCountMinus.addEventListener('click', () => {
 if (count.value >= 2) {
     count.value = +count.value - 1;
     countArea.value = (+countArea.value - area).toFixed(2);
-    price.innerHTML = +price.innerHTML - +priceSum;
+    totalAmount.innerHTML = +totalAmount.innerHTML - +price;
 }
 });
 
