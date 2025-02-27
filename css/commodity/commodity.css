@@ -14,7 +14,6 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 0 15px;
   margin-bottom: 70px;
 }
 @media (max-width: 969px) {
@@ -179,6 +178,10 @@
   color: #159947;
   font-weight: 700;
 }
+.commodity__info-text-price {
+  display: flex;
+  gap: 10px;
+}
 .commodity__info-btns {
   margin-top: 10px;
   padding: 12px;
@@ -257,6 +260,7 @@
   width: 100%;
   font-size: 25px;
   background-color: #f0f0f0;
+  cursor: pointer;
 }
 .commodity__info-counter-stock {
   height: 35px;
@@ -267,6 +271,7 @@
   -moz-text-align-last: center;
        text-align-last: center;
   direction: rtl;
+  cursor: pointer;
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
@@ -315,46 +320,35 @@
 .commodity__properties-title {
   font-size: 16px;
   margin-bottom: 32px;
+  color: #fff;
+  padding: 13px 10px;
+  background-color: #797979;
+}
+@media (max-width: 800px) {
+  .commodity__properties-title {
+    margin-bottom: 20px;
+  }
 }
 .commodity__properties-characteristics-info-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: space-between;
+  display: flex;
   align-items: center;
   gap: 10px;
 }
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .commodity__properties-characteristics-info-wrapper {
-    grid-template-columns: repeat(2, auto);
+    flex-direction: column;
+    gap: 20px;
   }
 }
-@media (max-width: 435px) {
-  .commodity__properties-characteristics-info-wrapper {
-    grid-template-columns: 1fr;
-  }
-}
-.commodity__properties-characteristics-info--margin-top {
-  margin-top: 28px;
-}
-.commodity__properties-characteristics-info--margin-top :last-child {
-  margin-bottom: 0;
-}
-@media (max-width: 720px) {
-  .commodity__properties-characteristics-info--margin-top {
-    order: 2;
-    margin-top: 0;
-  }
-}
-@media (max-width: 435px) {
-  .commodity__properties-characteristics-info--margin-top {
-    order: 0;
-    margin-bottom: 40px;
-  }
+.commodity__properties-characteristics-info {
+  width: 100%;
 }
 .commodity__properties-characteristics-info-item {
   display: flex;
-  gap: 40px;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 3px;
+  background-color: #f0f0f0;
 }
 @media (max-width: 435px) {
   .commodity__properties-characteristics-info-item {
@@ -374,9 +368,18 @@
   background-repeat: no-repeat;
 }
 
+.tabs {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+@media (max-width: 969px) {
+  .tabs {
+    max-width: 720px;
+  }
+}
+
 .tab {
   display: none;
-  padding: 20px;
   margin-bottom: 60px;
 }
 

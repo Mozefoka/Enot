@@ -248,6 +248,7 @@
     }
 
     &__content-card {
+        position: relative;
         padding: 40px 20px;
         box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
         margin-bottom: 30px;
@@ -278,6 +279,19 @@
 
     &__content-card-price--color {
         color: gray;
+    }
+
+    &__content-card-promotion {
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        width: 200px;
+        padding: 5px 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        background-color: red;
+        text-align: center;
     }
 
     &__pages {

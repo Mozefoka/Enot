@@ -15,7 +15,3 @@ burger.addEventListener('click', function() {
 	line3.classList.toggle("header__burger-line3--active");
 	menu.classList.toggle("header__menu--active");
 });
-
-function addActive() {
-	promotionsItem.classList.toggle("header__menu-list-promotions-item--active");
-};

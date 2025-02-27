@@ -262,50 +262,50 @@ input[type="range"] {
         color: #159947;
     }
 
-    &__menu-list-promotions {
-        position: relative;
+    // &__menu-list-promotions {
+    //     position: relative;
 
-        @media (max-width: 880px) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
+    //     @media (max-width: 880px) {
+    //         display: flex;
+    //         flex-direction: column;
+    //         align-items: center;
+    //     }
+    // }
 
-    &__menu-list-promotions-btn {
-        cursor: pointer;
-    }
+    // &__menu-list-promotions-btn {
+    //     cursor: pointer;
+    // }
 
-    &__menu-list-promotions-item {
-        display: none;
-    }
+    // &__menu-list-promotions-item {
+    //     display: none;
+    // }
 
-    &__menu-list-promotions-item--active {
-        display: block;
-        position: absolute;
-        top: 40px;
-        right: -60px;
-        width: 150px;
-        padding: 25px 11px;
-        background-color: #fff;
-        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
-        font-size: 14px;
-        text-align: center;
-        z-index: 5;
+    // &__menu-list-promotions-item--active {
+    //     display: block;
+    //     position: absolute;
+    //     top: 40px;
+    //     right: -60px;
+    //     width: 150px;
+    //     padding: 25px 11px;
+    //     background-color: #fff;
+    //     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+    //     font-size: 14px;
+    //     text-align: center;
+    //     z-index: 5;
 
-        :first-child {
-            margin-bottom: 15px;
-        }
+    //     :first-child {
+    //         margin-bottom: 15px;
+    //     }
 
-        @media (max-width: 880px) {
-            position: static;
-            max-width: 830px;
-            width: 100%;
-            padding: 20px 0 0 0;
-            text-align: center;
-            box-shadow: none;
-        }
-    }
+    //     @media (max-width: 880px) {
+    //         position: static;
+    //         max-width: 830px;
+    //         width: 100%;
+    //         padding: 20px 0 0 0;
+    //         text-align: center;
+    //         box-shadow: none;
+    //     }
+    // }
 
     &__menu-list-number {
         display: none;
@@ -416,6 +416,19 @@ input[type="range"] {
         font-size: 26px;
         font-weight: 500;
         color: #fff;
+    }
+
+    .catalog__content-card-promotion {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 200px;
+        padding: 5px 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        background-color: red;
+        text-align: center;
     }
 }
 .video {
