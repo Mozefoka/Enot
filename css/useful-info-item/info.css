@@ -1,0 +1,26 @@
+.useful-info {
+  padding: 0 15px;
+  margin-bottom: 50px;
+}
+.useful-info__block-wrapper {
+  display: flex;
+  flex: 33.333%;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .useful-info__block-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+.useful-info__img {
+  margin-bottom: 10px;
+}
+.useful-info__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.useful-info__text {
+  font-size: 16px;
+}/*# sourceMappingURL=info.css.map */

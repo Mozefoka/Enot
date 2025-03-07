@@ -15,37 +15,355 @@
 </head>
 
 <body>
-    <header class="header" id="up">
-        <div class="header__logo">
-            <a href="/index.html"><img src="../icons/logo.png" alt="logo"></a>
+    <section class="header-fixed-wrapper">
+        <div class="container">
+            <div class="header-fixed">
+                <div class="header-fixed__first-item">
+
+                    <div class="header-fixed__logo">
+                        <a href="../index.html">
+                            <img src="../icons/logo.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <div class="header__content-info-location-point">
+                        <img src="../icons/location.svg" alt="Location">
+                        <p>Санкт-Петербург</p>
+                    </div>
+                </div>
+
+                <div class="header-fixed__second-item">
+
+                    <form class="header__content-b-line-search" action="">
+                        <input type="text">
+                    </form>
+
+                    <div class="header-fixed__phone-number">
+                        <a href="tel:+79213466257">+7 921 346 62 57</a>
+                    </div>
+                </div>
+
+                <div class="header-fixed__btns">
+                    <a href="#">
+                        <p>Избранное</p>
+                        <img src="../icons/heart.svg" alt="Heart">
+                        <p>0 шт.</p>
+                    </a>
+
+                    <a href="#">
+                        <img src="../icons/shop-cart.svg" alt="Shop Cart">
+                        <p>0 шт.</p>
+                        <p>0 ₽</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="header-wrapper">
+
+        <div class="header-mobile">
+            <div class="header-mobile__logo">
+                <a href="../index.html">
+                    <img src="../icons/logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="header-mobile__catalog">
+                <div class="dropdown">
+
+                    <div class="dropdown-btn" onclick="toggleDropdown()">
+                        <p>Каталог</p>
+                        <img src="../icons/arrow-down.svg" class="arrow">
+                    </div>
+
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-item">
+                            <a href="#">Пункт 1</a>
+
+                            <a href="#">Пункт 2</a>
+
+                            <a href="#">Пункт 3</a>
+
+                            <a href="#">Пункт 4</a>
+
+                            <a href="#">Пункт 5</a>
+
+                            <a href="#">Пункт 6</a>
+                        </div>
+
+                        <div class="dropdown-content-item">
+                            <a href="#">Пункт 7</a>
+
+                            <a href="#">Пункт 8</a>
+
+                            <a href="#">Пункт 9</a>
+
+                            <a href="#">Пункт 10</a>
+
+                            <a href="#">Пункт 11</a>
+
+                            <a href="#">Пункт 12</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="header__menu">
+
+                <form class="header__menu-form header__content-b-line-search" action="">
+                    <input type="text">
+                </form>
+
+                <ul class="header__menu-list">
+
+                    <li>
+                        <a href="../index.html">Главная</a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/catalog.html">Каталог</a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/services.html">Услуги</a>
+                    </li>
+
+                    <li class="header__menu-list-promotions">
+                        <a class="header__menu-list-link--color" href="../pages/promotion-catalog.html">Акции</a>
+                    </li>
+
+                    <li class="header__menu-list-useful-video">
+                        <a href="../pages/useful-videos.html">Полезное видео</a>
+                    </li>
+
+                    <li class="header__menu-list-useful-information">
+                        <a href="../pages/useful-info.html">Полезная информация</a>
+                    </li>
+
+                    <li class="header__menu-list-about">
+                        <a href="../pages/about.html">О нас</a>
+                    </li>
+
+                    <li class="header__menu-list-our-job">
+                        <a href="../pages/services.html">Наши работы</a>
+                    </li>
+
+                    <li class="header__menu-list-contacts">
+                        <a href="../pages/contacts.html">Контакты</a>
+                    </li>
+
+                    <li class="header__menu-list-number">
+                        <a href="tel:+79213466257">+7 921 346 62 57</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-mobile__burger">
+                <span class="header-mobile__burger-line1"></span>
+
+                <span class="header-mobile__burger-line2"></span>
+
+                <span class="header-mobile__burger-line3"></span>
+            </div>
         </div>
 
-        <div class="header__burger">
-            <span class="header__burger-line1"></span>
-            <span class="header__burger-line2"></span>
-            <span class="header__burger-line3"></span>
+        <div class="container">
+            <div class="header" id="up">
+
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+
+                        <li>
+                            <a href="../index.html">Главная</a>
+                        </li>
+
+                        <li>
+                            <a href="../pages/catalog.html">Каталог</a>
+                        </li>
+
+                        <li>
+                            <a class="header__menu-list-link--color" href="../pages/services.html">Услуги</a>
+                        </li>
+
+                        <li class="header__menu-list-promotions">
+                            <a href="../pages/promotion-catalog.html">Акции</a>
+                        </li>
+
+                        <li class="header__menu-list-useful">
+                            <a href="../pages/useful-videos.html">Полезное видео</a>
+                        </li>
+
+                        <li class="header__menu-list-useful">
+                            <a href="../pages/useful-info.html">Полезная информация</a>
+                        </li>
+
+                        <li class="header__menu-list-about">
+                            <a href="../pages/about.html">О нас</a>
+                        </li>
+
+                        <li>
+                            <a href="../pages/services.html">Наши работы</a>
+                        </li>
+
+                        <li class="header__menu-list-contacts">
+                            <a href="../pages/contacts.html">Контакты</a>
+                        </li>
+
+                        <li class="header__menu-list-number">
+                            <a href="tel:+79213466257">+7 921 346 62 57</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__content">
+                    <div class="header__logo">
+                        <a href="../index.html">
+                            <img src=" ../icons/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="header__content-box">
+                        <div class="header__content-info">
+
+                            <div class="header__content-info-location">
+
+                                <div class="header__content-info-location-point">
+                                    <img src="../icons/location.svg" alt="Location">
+                                    <p>Санкт-Петербург</p>
+                                </div>
+
+                                <div class="header__content-info-location-point">
+                                    <img src="../icons/sec-location.svg" alt="Location">
+                                    <p>Ленинский пр. 128 к. 2 ТЦ «Нарва» 3 этаж</p>
+                                </div>
+                            </div>
+
+                            <div class="header__content-info-contact">
+                                <div class="header__content-info-contact-schedule">
+                                    <img src="../icons/clock.svg" alt="Clock">
+                                    <p>Ежедневно 10:00 - 20:00</p>
+                                </div>
+
+                                <div class="header__content-info-contact-messengers">
+                                    <a href="#">
+                                        <img src="../icons/whatsapp.svg" alt="Whatsapp">
+                                    </a>
+
+                                    <a href="#">
+                                        <img src="../icons/telegram.svg" alt="Telegram">
+                                    </a>
+                                </div>
+
+                                <div class="header__content-info-contact-number">
+                                    <a href="tel:+79213466257">+7 921 346 62 57</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header__content-b-line">
+
+                            <form class="header__content-b-line-search" action="">
+                                <input type="text">
+                            </form>
+
+                            <div class="header__content-b-line-added-btns">
+
+                                <a href="#">
+                                    <p>Избранное</p>
+                                    <img src="../icons/heart.svg" alt="Heart">
+                                </a>
+
+                                <a href="#">
+                                    <p>Корзина</p>
+                                    <img src="../icons/shop-cart.svg" alt="Shop Cart">
+                                </a>
+                            </div>
+
+                            <div class="header__content-b-line-contact-btn">
+                                <a href="#">Связаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__coverings">
+
+                    <ul class="header__coverings-top-list">
+                        <li class="header__coverings-top-list-item">
+                            <a href="#">Ламинат</a>
+                        </li>
+
+                        <li class="header__coverings-top-list-item">
+                            <a href="#">Ламинат</a>
+                        </li>
+
+                        <li class="header__coverings-top-list-item">
+                            <a href="#">Ламинат</a>
+                        </li>
+
+                        <li class="header__coverings-top-list-item">
+                            <a href="#">Ламинат</a>
+                        </li>
+
+                        <li class="header__coverings-top-list-item">
+                            <a href="#">Ламинат</a>
+                        </li>
+
+                        <li class="header__coverings-top-list-item">
+                            <a href="#">Ламинат</a>
+                        </li>
+
+                        <li class="header__coverings-top-list-item">
+                            <a href="#">Ламинат</a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__coverings-bottom-list">
+                        <li class="header__coverings-top-list-item">
+                            <a href="#">Ламинат</a>
+                        </li>
+
+                        <li class="header__coverings-top-list-item">
+                            <a href="#">Ламинат</a>
+                        </li>
+
+                        <li class="header__coverings-top-list-item">
+                            <a href="#">Ламинат</a>
+                        </li>
+
+                        <li class="header__coverings-top-list-item">
+                            <a href="#">Ламинат</a>
+                        </li>
+
+                        <li class="header__coverings-top-list-item">
+                            <a href="#">Ламинат</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <nav class="header__menu">
-            <ul class="header__menu-list">
-                <li><a href="../index.html">Главная</a></li>
-                <li><a href="../pages/catalog.html">Каталог</a></li>
-                <li><a class="header__menu-list-link--color" href="../pages/services.html">Услуги</a></li>
-                <li><a href="../pages/promotion-catalog.html">Акции</a></li>
-                <li><a href="../pages/useful.html">Полезное</a></li>
-                <li><a href="../pages/about.html">О нас</a></li>
-                <li><a href="../pages/contacts.html">Контакты</a></li>
-                <li class="header__menu-list-number"><a href="tel:+79213466257">+7 921 346 62 57</a></li>
-            </ul>
-        </nav>
-
-        <div class="header__phone-number"><a href="tel:+79213466257">+7 921 346 62 57</a>
         </div>
     </header>
-
     <main class="main">
+
+        <div class="container">
+            <ul class="breadcrumbs">
+
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__item-link" href="../index.html">Главная</a>
+                </li>
+    
+                <li>
+                    <a class="breadcrumbs__item-link--color" href="#">Услуги</a>
+                </li>
+                
+            </ul>
+        </div>
+
         <div class="services services--color">
             <div class="container">
+                
                 <div class="services__content">
                     <div class="services__content-block services__content-block--padding">
                         <h2 class="services__content-title">Помощь в выборе напольного покрытия</h2>
@@ -136,18 +454,173 @@
     </main>
 
     <footer class="footer">
-        <nav class="footer__menu">
-            <div class="footer__logo">
-                <a href="../index.html"><img src=" ../icons/logo.png" alt="logo"></a>
-            </div>
+        <div class="container">
 
-            <ul class="footer__menu-list">
-                <li class="footer__menu-list-main"><a href="../index.html">Главная</a></li>
-                <li class="footer__menu-list-catalog"><a href="../pages/catalog.html">Каталог</a></li>
-                <li class="footer__menu-list-services"><a href="../pages/services.html">Услуги</a></li>
-                <li class="footer__menu-list-about"><a href="../pages/about.html">О нас</a></li>
-                <li class="footer__menu-list-contacts"><a href="../pages/contacts.html">Контакты</a></li>
+        <div class="footer__info">
+
+            <details>
+                <summary>
+                    Общая информация
+                </summary>
+
+                <nav class="footer__menu">
+
+                    <ul class="footer__menu-list">
+
+                        <li class="footer__menu-list-main">
+                            <a href="../index.html">Главная</a>
+                        </li>
+
+                        <li class="footer__menu-list-catalog">
+                            <a href="../pages/catalog.html">Каталог</a>
+                        </li>
+
+                        <li class="footer__menu-list-services">
+                            <a href="../pages/services.html">Услуги</a>
+                        </li>
+
+                        <li class="footer__menu-list-promotion">
+                            <a href="../pages/promotion-catalog.html">Акции</a>
+                        </li>
+
+                        <li class="footer__menu-list-useful-video">
+                            <a href="../pages/useful-videos.html">Полезное видео</a>
+                        </li>
+
+                        </ul>
+
+                        <ul class="footer__menu-list">
+
+                        <li class="footer__menu-list-useful-information">
+                            <a href="../pages/useful-videos.html">Полезная информация</a>
+                        </li>
+
+                        <li class="footer__menu-list-about">
+                            <a href="../pages/about.html">О нас</a>
+                        </li>
+
+                        <li class="footer__menu-list-our-job">
+                            <a href="../pages/services.html">Наши работы</a>
+                        </li>
+
+                        <li class="footer__menu-list-contacts">
+                            <a href="../pages/contacts.html">Контакты</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </details>
+
+            <details>
+                <summary>
+                    Каталог напольных покрытий
+                </summary>
+
+            <div class="footer__catalog">
+
+            <ul class="footer__catalog-list">
+
+                <li class="footer__catalog-list-item">
+                    <a href="#">Ламинат</a>
+                </li>
+
+                <li class="footer__catalog-list-item">
+                    <a href="#">Ламинат</a>
+                </li>
+
+                <li class="footer__catalog-list-item">
+                    <a href="#">Ламинат</a>
+                </li>
+
+                <li class="footer__catalog-list-item">
+                    <a href="#">Ламинат</a>
+                </li>
+
+                <li class="footer__catalog-list-item">
+                    <a href="#">Ламинат</a>
+                </li>
+
+                <li class="footer__catalog-list-item">
+                    <a href="#">Ламинат</a>
+                </li>
             </ul>
+
+            <ul class="footer__catalog-list">
+
+                <li class="footer__catalog-list-item">
+                    <a href="#">Ламинат</a>
+                </li>
+                
+                <li class="footer__catalog-list-item">
+                    <a href="#">Ламинат</a>
+                </li>
+                
+                <li class="footer__catalog-list-item">
+                    <a href="#">Ламинат</a>
+                </li>
+                
+                <li class="footer__catalog-list-item">
+                    <a href="#">Ламинат</a>
+                </li>
+                
+                <li class="footer__catalog-list-item">
+                    <a href="#">Ламинат</a>
+                </li>
+                
+                <li class="footer__catalog-list-item">
+                    <a href="#">Ламинат</a>
+                </li>
+            </ul>
+        </div>
+            </details>
+
+            <details>
+                <summary>
+                    Контактная информация
+                </summary>
+                
+            <div class="footer__contacts">
+
+                <div class="header__content-info-location-point">
+                    <img src="../icons/location.svg" alt="Location">
+                    <p>Санкт-Петербург</p>
+                </div>
+
+                <div class="header__content-info-location-point">
+                    <img src="../icons/sec-location.svg" alt="Location">
+                    <p>Ленинский пр. 128 к. 2 ТЦ «Нарва» 3 этаж</p>
+                </div>
+
+                <div class="header__content-info-contact-schedule">
+                    <img src="../icons/clock.svg" alt="Clock">
+                    <p>Ежедневно 10:00 - 20:00</p>
+                </div>
+
+                <div>
+                    <a href="tel:+79213466257" class="footer__contacts-number">+7 921 346 62 57</a>
+                </div>
+
+                <a href="#" class="footer__contacts-email">
+                    <img src="../icons/clock.svg" alt="Clock">
+                    <p>in@mail.ru</p>
+                </a>
+
+                <div class="footer__contacts-btn">
+                    <a href="#">Связаться</a>
+                </div>
+            </div>
+            </details>
+    </div>
+
+        <div class="footer__mid">
+            
+            <a href="../index.html" class="footer__logo">
+                <img src="../icons/logo.png" alt="Logo">
+            </a>
+
+            <form class="header__content-b-line-search" action="">
+                <input type="text">
+            </form>
 
             <div class="footer__messengers">
                 <a href="#">
@@ -155,7 +628,7 @@
                 </a>
 
                 <a href="#">
-                    <img src="../icons/whatsapp.svg" alt="whatsapp">
+                    <img src="../icons/whats.svg" alt="whatsapp">
                 </a>
 
                 <a href="#">
@@ -166,22 +639,15 @@
                     <img src="../icons/vk.svg" alt="vk">
                 </a>
             </div>
-        </nav>
+        </div>
 
-        <p class="footer__info">© ЕнотПаркет. Все права защищены. <br>
-            Информация, предоставленная на сайте, не является публичной офертой</p>
+        <p class="footer__privacy">© ЕнотПаркет. Все права защищены. <br>
+            Информация, предоставленная на сайте, не является публичной офертой
+        </p>
 
-        <div class="footer__contacts">
-            <div class="footer__contacts-messengers">
-                <a class="footer__messengers-item" href="#"><img src="../icons/tg.svg" alt="tg"></a>
-                <a class="footer__messengers-item" href="#"><img src="../icons/whatsapp.svg" alt="whatsapp"></a>
-                <a class="footer__messengers-item" href="#"><img src="../icons/vk.svg" alt="vk"></a>
-            </div> 
-
-            <div class="footer__contacts-name">© 2023 Енот Паркет</div>
-            <div class="footer__contacts-up"><a href="#up">Наверх</a></div>
         </div>
     </footer>
+
 
     <script src="../script.js"></script>
 </body>

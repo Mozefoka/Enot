@@ -1,0 +1,29 @@
+.useful-info {
+    padding: 0 15px;
+    margin-bottom: 50px;
+
+    &__block-wrapper {
+        display: flex;
+        flex: 33.333%;
+        gap: 10px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+
+    &__img {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 16px;
+    }
+}

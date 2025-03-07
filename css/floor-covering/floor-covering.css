@@ -241,30 +241,103 @@
   margin-bottom: 15px;
 }
 .floor-covering__content-card-title {
+  font-size: 18px;
   margin-bottom: 15px;
 }
 .floor-covering__content-card-name {
+  font-size: 18px;
   color: gray;
   margin-bottom: 15px;
 }
 .floor-covering__content-card-price {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
+  font-size: 18px;
+  color: red;
 }
 .floor-covering__content-card-price--color {
-  color: gray;
+  color: #159947;
 }
 .floor-covering__content-card-promotion {
   position: absolute;
-  top: 70px;
+  top: 60px;
   left: 20px;
-  width: 200px;
-  padding: 5px 0;
-  font-size: 16px;
+  width: 140px;
+  padding: 10px 0;
+  font-size: 20px;
   font-weight: 500;
   color: #fff;
-  background-color: red;
+  background-color: #159947;
   text-align: center;
+}
+@media (max-width: 1200px) {
+  .floor-covering__content-card-promotion {
+    width: 120px;
+    padding: 6px 0;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1050px) {
+  .floor-covering__content-card-promotion {
+    width: 100px;
+    padding: 6px 0;
+    font-size: 17px;
+  }
+}
+@media (max-width: 969px) {
+  .floor-covering__content-card-promotion {
+    width: 110px;
+    padding: 8px 0;
+    font-size: 19px;
+  }
+}
+@media (max-width: 700px) {
+  .floor-covering__content-card-promotion {
+    width: 300px;
+    padding: 15px 0;
+    font-size: 24px;
+  }
+}
+@media (max-width: 465px) {
+  .floor-covering__content-card-promotion {
+    top: 40px;
+    width: 160px;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+}
+.floor-covering__btn-heart {
+  max-width: 40px;
+  height: auto;
+  position: absolute;
+  top: 60px;
+  right: 25px;
+  padding: 7px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+@media (max-width: 1200px) {
+  .floor-covering__btn-heart {
+    max-width: 30px;
+    padding: 5px;
+  }
+}
+@media (max-width: 969px) {
+  .floor-covering__btn-heart {
+    max-width: 35px;
+    padding: 7px;
+  }
+}
+@media (max-width: 700px) {
+  .floor-covering__btn-heart {
+    max-width: 50px;
+  }
+}
+@media (max-width: 465px) {
+  .floor-covering__btn-heart {
+    top: 40px;
+    width: 40px;
+  }
 }
 .floor-covering__pages {
   display: flex;

@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/useful/useful.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
-    <title>Каталог</title>
+    <title>Видео</title>
 </head>
 
 <body>
@@ -133,7 +134,7 @@
                     </li>
 
                     <li class="header__menu-list-useful-video">
-                        <a href="../pages/useful-videos.html">Полезное видео</a>
+                        <a class="header__menu-list-link--color" href="../pages/useful-videos.html">Полезное видео</a>
                     </li>
 
                     <li class="header__menu-list-useful-information">
@@ -190,7 +191,7 @@
                         </li>
 
                         <li class="header__menu-list-useful">
-                            <a href="../pages/useful-videos.html">Полезное видео</a>
+                            <a class="header__menu-list-link--color" href="../pages/useful-videos.html">Полезное видео</a>
                         </li>
 
                         <li class="header__menu-list-useful">
@@ -347,54 +348,41 @@
 
     <main class="main">
         <div class="container">
-            <div class="catalog">
-                <ul class="breadcrumbs">
-                    <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="../index.html">Главная</a></li>
-                    <li><a class="breadcrumbs__item-link--color">Акции</a></li>
-                </ul>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="../index.html">Главная</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="../pages/catalog.html">Полезное видео</a>
+            </li>
+            <li><a class="breadcrumbs__item-link--color">Видео</a></li>
+        </ul>
+    </div>
 
-                <div class="catalog__content">
-                    <div class="catalog__content-card">
-                        <a href="../pages/promotion-floor-covering.html">
-                            <img src="../images/photo_2023-11-30_17-.jpg" alt="floor">
-                            <p class="catalog__content-card-name">SDFSFSDF</p>
-                            <p class="catalog__content-card-promotion">Акция</p>
-                        </a>
+        <div class="container">
+            <div class="useful">
+                <h1 class="useful__title">Здесь мы собрали для Вас полезную информацию: видео, ссылки, статьи.</h1>
+
+                <div class="useful__content">
+                    <div class="useful__content-block">
+                        <div class="useful__content-video">
+                            <iframe width="100%" height="400" src="https://youtu.be/T2Velgyvs6s?si=xxkxyy-h_NmS_0WG">
+                            </iframe>
+                        </div>
+                        <h2 class="useful__content-title">Напольная пробка - почему это лучшее, что можно купить за
+                            деньги? Пробка - "Технология природы"</h2>
+                        <p class="useful__content-text">Пробку, как материал для напольных и настенных покрытий, очень
+                            недооценивают. Мало кто о ней что-либо знает.
+                            Знакомьтесь - Мир пробки.</p>
                     </div>
-                    <div class="catalog__content-card">
-                        <a href="#">
-                            <img src="../images/photo_2023-11-30_17-.jpg" alt="floor">
-                            <p class="catalog__content-card-name">Пробковые напольные покрытия</p>
-                            <p class="catalog__content-card-promotion">Акция</p>
-                        </a>
-                    </div>
-                    <div class="catalog__content-card">
-                        <a href="#">
-                            <img src="../images/photo_2023-11-30_17-.jpg" alt="floor">
-                            <p class="catalog__content-card-name">Пробковые напольные покрытия</p>
-                            <p class="catalog__content-card-promotion">Акция</p>
-                        </a>
-                    </div>
-                    <div class="catalog__content-card">
-                        <a href="#">
-                            <img src="../images/photo_2023-11-30_17-.jpg" alt="floor">
-                            <p class="catalog__content-card-name">Пробковые напольные покрытия</p>
-                            <p class="catalog__content-card-promotion">Акция</p>
-                        </a>
-                    </div>
-                    <div class="catalog__content-card">
-                        <a href="#">
-                            <img src="../images/photo_2023-11-30_17-.jpg" alt="floor">
-                            <p class="catalog__content-card-name">Пробковые напольные покрытия</p>
-                            <p class="catalog__content-card-promotion">Акция</p>
-                        </a>
-                    </div>
-                    <div class="catalog__content-card">
-                        <a href="#">
-                            <img src="../images/photo_2023-11-30_17-.jpg" alt="floor">
-                            <p class="catalog__content-card-name">Пробковые напольные покрытия</p>
-                            <p class="catalog__content-card-promotion">Акция</p>
-                        </a>
+
+                    <div class="useful__content-block">
+                        <div class="useful__content-video">
+                            <iframe width="100%" height="400" src="https://youtu.be/T2Velgyvs6s?si=xxkxyy-h_NmS_0WG">
+                            </iframe>
+                        </div>
+                        <h2 class="useful__content-title">Напольная пробка - почему это лучшее, что можно купить за
+                            деньги? Пробка - "Технология природы"</h2>
+                        <p class="useful__content-text">Пробку, как материал для напольных и настенных покрытий, очень
+                            недооценивают. Мало кто о ней что-либо знает.
+                            Знакомьтесь - Мир пробки.</p>
                     </div>
                 </div>
             </div>
@@ -595,7 +583,6 @@
 
         </div>
     </footer>
-
 
     <script src="../script.js"></script>
 </body>

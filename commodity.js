@@ -1,6 +1,5 @@
 'use strict';
 
-const infoPopup = document.querySelector(".commodity__info-popup-wrapper");
 const buttonCountPlus = document.getElementById("buttonCountPlus");
 const buttonCountMinus = document.getElementById("buttonCountMinus");
 const count = document.getElementById("buttonCountNumber");
@@ -9,6 +8,44 @@ const buttonCountMinusArea = document.getElementById("buttonCountMinusArea");
 const countArea = document.getElementById("buttonCountNumberArea");
 const productsBtns = document.querySelector(".commodity__info-btns-products");
 const productsBtnsItem = document.querySelector(".first");
+const overlay = document.getElementById('overlay');
+
+        // Открытие модального окна
+        document.querySelectorAll('.openModal').forEach(button => {
+            button.addEventListener('click', function() {
+                const modalId = this.getAttribute('data-modal'); // Получаем ID модального окна
+                const modal = document.getElementById(modalId); // Находим модальное окно по ID
+                modal.classList.add('open'); // Открываем модальное окно
+                overlay.classList.add('open'); // Показываем оверлей
+            });
+        });
+
+        // Закрытие модального окна
+        document.querySelectorAll('.close-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const modal = this.closest('.modal'); // Находим ближайшее модальное окно
+                modal.classList.remove('open'); // Закрываем модальное окно
+                overlay.classList.remove('open'); // Скрываем оверлей
+            });
+        });
+
+        // Закрытие по клику на оверлей
+        overlay.addEventListener('click', function() {
+            document.querySelectorAll('.modal.open').forEach(modal => {
+                modal.classList.remove('open'); // Закрываем все открытые модальные окна
+            });
+            overlay.classList.remove('open'); // Скрываем оверлей
+        });
+
+        // Закрытие по Esc
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                document.querySelectorAll('.modal.open').forEach(modal => {
+                    modal.classList.remove('open'); // Закрываем все открытые модальные окна
+                });
+                overlay.classList.remove('open'); // Скрываем оверлей
+            }
+        });
 
 let selected = productsBtnsItem;
 
@@ -97,16 +134,6 @@ if (count.value >= 2) {
     countArea.value = (+countArea.value - area).toFixed(2);
     totalAmount.innerHTML = +totalAmount.innerHTML - +price;
 }
-});
-
-function popup() {
-	infoPopup.classList.toggle("commodity__info-popup-wrapper--active");
-};
-
-window.addEventListener("click", (event) => {
-    if (event.target == infoPopup) {
-      infoPopup.classList.remove("commodity__info-popup-wrapper--active");
-    }
 });
 
 let tab = function () {

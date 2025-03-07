@@ -264,34 +264,99 @@
     }
 
     &__content-card-title {
+        font-size: 18px;
         margin-bottom: 15px;
     }
 
     &__content-card-name {
+        font-size: 18px;
         color: gray;
         margin-bottom: 15px;
     }
 
     &__content-card-price {
         display: flex;
-        justify-content: space-between;
+        gap: 10px;
+        font-size: 18px;
+        color: red;
     }
 
     &__content-card-price--color {
-        color: gray;
+        color: #159947;
     }
 
     &__content-card-promotion {
         position: absolute;
-        top: 70px;
+        top: 60px;
         left: 20px;
-        width: 200px;
-        padding: 5px 0;
-        font-size: 16px;
+        width: 140px;
+        padding: 10px 0;
+        font-size: 20px;
         font-weight: 500;
         color: #fff;
-        background-color: red;
+        background-color: #159947;
         text-align: center;
+
+        @media (max-width: 1200px) {
+            width: 120px;
+            padding: 6px 0;
+            font-size: 18px;
+        }
+
+        @media (max-width: 1050px) {
+            width: 100px;
+            padding: 6px 0;
+            font-size: 17px;
+        }
+
+        @media (max-width: 969px) {
+            width: 110px;
+            padding: 8px 0;
+            font-size: 19px;
+        }
+
+        @media (max-width: 700px) {
+            width: 300px;
+            padding: 15px 0;
+            font-size: 24px;
+        }
+
+        @media (max-width: 465px) {
+            top: 40px;
+            width: 160px;
+            padding: 10px 0;
+            font-size: 20px;
+        }
+    }
+
+    &__btn-heart {
+        max-width: 40px;
+        height: auto;
+        position: absolute;
+        top: 60px;
+        right: 25px;
+        padding: 7px;
+        background-color: #fff;
+        border-radius: 100%;
+
+        @media (max-width: 1200px) {
+            max-width: 30px;
+            padding: 5px;
+        }
+
+        @media (max-width: 969px) {
+            max-width: 35px;
+            padding: 7px;
+        }
+
+        @media (max-width: 700px) {
+            max-width: 50px;
+        }
+
+        @media (max-width: 465px) {
+            top: 40px;
+            width: 40px;
+        }
     }
 
     &__pages {
