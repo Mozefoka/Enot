@@ -154,7 +154,7 @@
 
     &__filter-mobile-wrapper {
         display: none;
-    
+
         @media (max-width: 700px) {
             width: 100%;
             display: flex;
@@ -163,10 +163,10 @@
             margin-top: 40px;
         }
     }
-    
+
     &__filter-mobile {
         display: none;
-    
+
         @media (max-width: 700px) {
             display: block;
             width: 585px;
@@ -180,7 +180,6 @@
         @media (max-width: 700px) {
             width: 100%;
         }
-        
     }
 
     &__options {
@@ -338,6 +337,7 @@
         padding: 7px;
         background-color: #fff;
         border-radius: 100%;
+        cursor: pointer;
 
         @media (max-width: 1200px) {
             max-width: 30px;

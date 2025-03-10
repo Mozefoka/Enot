@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/contacts/contacts.css">
     <link rel="stylesheet" href="../css/commodity/commodity.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
     <section class="header-fixed-wrapper">
         <div class="container">
             <div class="header-fixed">
@@ -37,7 +38,7 @@
                 <div class="header-fixed__second-item">
 
                     <form class="header__content-b-line-search" action="">
-                        <input type="text">
+                        <input type="text" placeholder="Поиск на Енот Паркет">
                     </form>
 
                     <div class="header-fixed__phone-number">
@@ -46,9 +47,9 @@
                 </div>
 
                 <div class="header-fixed__btns">
-                    <a href="#">
+                    <a class="openModal" data-modal="modal1">
                         <p>Избранное</p>
-                        <img src="../icons/heart.svg" alt="Heart">
+                        <img src="../icons/heart.svg" alt="Heart" class="header-fixed__btns-heart">
                         <p>0 шт.</p>
                     </a>
 
@@ -111,10 +112,10 @@
                 </div>
             </div>
 
-            <nav class="header__menu">
+            <nav class="header__menu" id="menu">
 
                 <form class="header__menu-form header__content-b-line-search" action="">
-                    <input type="text">
+                    <input type="text" placeholder="Поиск на Енот Паркет">
                 </form>
 
                 <ul class="header__menu-list">
@@ -124,7 +125,7 @@
                     </li>
 
                     <li>
-                        <a class="header__menu-list-link--color"  href="../pages/catalog.html">Каталог</a>
+                        <a class="header__menu-list-link--color" href="../pages/catalog.html">Каталог</a>
                     </li>
 
                     <li>
@@ -161,7 +162,7 @@
                 </ul>
             </nav>
 
-            <div class="header-mobile__burger">
+            <div class="header-mobile__burger" data-menu="menu">
                 <span class="header-mobile__burger-line1"></span>
 
                 <span class="header-mobile__burger-line2"></span>
@@ -181,7 +182,7 @@
                         </li>
 
                         <li>
-                            <a class="header__menu-list-link--color"  href="../pages/catalog.html">Каталог</a>
+                            <a class="header__menu-list-link--color" href="../pages/catalog.html">Каталог</a>
                         </li>
 
                         <li>
@@ -266,12 +267,12 @@
                         <div class="header__content-b-line">
 
                             <form class="header__content-b-line-search" action="">
-                                <input type="text">
+                                <input type="text" placeholder="Поиск на Енот Паркет">
                             </form>
 
                             <div class="header__content-b-line-added-btns">
 
-                                <a href="#">
+                                <a class="openModal" data-modal="modal1">
                                     <p>Избранное</p>
                                     <img src="../icons/heart.svg" alt="Heart">
                                 </a>
@@ -345,509 +346,728 @@
                 </div>
             </div>
         </div>
-        </div>
     </header>
 
     <main class="main">
+
+        <div data-modal="modal1" class="heart-button-modal openModal hidden">
+            <img src="../icons/heart.svg" alt="Heart">
+            <div class="heart-button-counter">13</div>
+        </div>
+
         <div class="container">
 
-        <section class="commodity">
-        
-            <ul class="breadcrumbs breadcrumbs--padding-none">
-                <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="../index.html">Главная</a>
-                </li>
-                <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="../pages/catalog.html">Каталог</a>
-                </li>
-                <li class="breadcrumbs__item"><a class="breadcrumbs__item-link"
-                        href="../pages/floor-covering.html">Пробковые напольные покрытия</a></li>
-                <li><a class="breadcrumbs__item-link--color">Corkart</a></li>
-            </ul>
+            <section class="commodity">
 
-            <div class="commodity__content">
-                <div class="commodity__content-item-images">
-                    <h1 class="commodity__title">ПВХ плитка</h1>
+                <ul class="breadcrumbs breadcrumbs--padding-none">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__item-link"
+                            href="../pages/catalog.html">Каталог</a>
+                    </li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__item-link"
+                            href="../pages/floor-covering.html">Пробковые напольные покрытия</a></li>
+                    <li><a class="breadcrumbs__item-link--color">Corkart</a></li>
+                </ul>
 
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-                        class="swiper mySwiper2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide commodity__content-img">
-                                <img src="../images/33417846.jpg" alt="commodity">
+                <div class="commodity__content">
+                    <div class="commodity__content-item-images">
+                        <h1 class="commodity__title">ПВХ плитка</h1>
+
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide commodity__content-img">
+                                    <img src="../images/33417846.jpg" alt="commodity">
+                                </div>
+
+                                <div class="swiper-slide commodity__content-img">
+                                    <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                                </div>
+
+                                <div class="swiper-slide commodity__content-img">
+                                    <img src="../images/33417846.jpg" alt="commodity">
+                                </div>
+
+                                <div class="swiper-slide commodity__content-img">
+                                    <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                                </div>
+                                <div class="swiper-slide commodity__content-img">
+                                    <img src="../images/33417846.jpg" alt="commodity">
+                                </div>
+
+                                <div class="swiper-slide commodity__content-img">
+                                    <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                                </div>
                             </div>
 
-                            <div class="swiper-slide commodity__content-img">
-                                <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
+                            <div class="heart-button" id="heartButton">
+                                <img class="commodity__content-btn-heart" id="heartButtonImage" src="../icons/heart.svg"
+                                    alt="Heart">
                             </div>
 
-                            <div class="swiper-slide commodity__content-img">
-                                <img src="../images/33417846.jpg" alt="commodity">
-                            </div>
-
-                            <div class="swiper-slide commodity__content-img">
-                                <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
-                            </div>
-                            <div class="swiper-slide commodity__content-img">
-                                <img src="../images/33417846.jpg" alt="commodity">
-                            </div>
-
-                            <div class="swiper-slide commodity__content-img">
-                                <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
-                            </div>
                         </div>
 
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div thumbsSlider="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide commodity__media-img">
+                                    <img src="../images/33417846.jpg" alt="commodity">
+                                </div>
 
-                        <div id="heartButton">
-                            <img class="commodity__content-btn-heart" id="heartButtonImage" src="../icons/heart.svg" alt="Heart">
+                                <div class="swiper-slide commodity__media-img">
+                                    <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                                </div>
+
+                                <div class="swiper-slide commodity__media-img">
+                                    <img src="../images/33417846.jpg" alt="commodity">
+                                </div>
+
+                                <div class="swiper-slide commodity__media-img">
+                                    <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                                </div>
+
+                                <div class="swiper-slide commodity__media-img">
+                                    <img src="../images/33417846.jpg" alt="commodity">
+                                </div>
+
+                                <div class="swiper-slide commodity__media-img">
+                                    <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                                </div>
+                            </div>
                         </div>
-
                     </div>
 
-                    <div thumbsSlider="" class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide commodity__media-img">
-                                <img src="../images/33417846.jpg" alt="commodity">
+                    <div class="commodity__content-item-info">
+
+                        <div class="overlay" id="overlay"></div>
+
+                        <div class="modal" id="modal1">
+                            <button class="close-button" id="closeModal">x</button>
+
+                            <form class="form" action="">
+
+                                <div class="form__items">
+                                    <label class="form__items-label">Как к вам обращаться?</label>
+                                    <input class="form__items-input" type="text" pattern="^[A-Za-zА-Яа-яЁё]" required />
+                                </div>
+
+                                <div class="form__items">
+                                    <label class="form__items-label" for="phone">Ваш номер телефона</label>
+                                    <input class="form__items-input" type="tel" name="phone" value="+(7)" required />
+                                </div>
+
+                                <div class="form__items">
+                                    <label class="form__items-label" for="email">Ваш Email</label>
+                                    <input class="form__items-input" type="tel" name="email" />
+                                </div>
+
+                                <div class="form__items">
+                                    <label class="form__items-label" for="comm">Комментарий</label>
+                                    <textarea class="form__items-textarea" name="comm"></textarea>
+                                </div>
+
+                                <ul class="form__list">
+
+                                    <div class="form__list-favs">
+                                        <div class="form__list-favs-img">
+                                            <img src="../icons/heart.svg" alt="Favorites">
+                                        </div>
+                
+                                        <p class="form__list-favs-text">Нет товаров в избранном</p>
+                
+                                        <a class="form__list-favs-btn" href="../pages/catalog.html">Перейти в каталог</a>
+                                    </div>
+
+                                    <div class="form__list-item-wrapper">
+
+                                        <div class="form__list-item-wrapper-delete">x</div>
+
+                                        <div class="form__list-item">
+                                            <a href="#">
+                                                <img src="../images/33417846.jpg" alt="img">
+                                            </a>
+
+                                            <li class="form__list-block">
+                                                <p>Настенная пробка Corkstyle Wall Design</p>
+
+                                                <div class="form__list-block-item">
+                                                    <p>Цена:</p>
+                                                    <p>2500р (кв.м.)</p>
+                                                </div>
+
+                                            </li>
+                                        </div>
+
+                                        <div class="form__list-counter">
+                                            <div class="counter__metrics counter__metrics--wrap">
+
+                                                <div class="counter__metrics-item counter__metrics-item--gap">
+                                                    <h3
+                                                        class="counter__metrics-area-title counter__metrics-area-title--margin">
+                                                        Площадь пола</h3>
+
+                                                    <div class="counter__metrics-btns">
+                                                        <input type="button" id="buttonCountMinusArea" value="-">
+                                                        <input class="counter__metrics-value" id="buttonCountNumberArea"
+                                                            value="0.98">
+                                                        <input type="button" id="buttonCountPlusArea" value="+">
+                                                    </div>
+                                                </div>
+
+                                                <div class="counter__metrics-item">
+                                                    <h3
+                                                        class="counter__metrics-amount-title counter__metrics-amount-title--margin">
+                                                        Количество упаковок</h3>
+
+                                                    <div class="counter__metrics-btns">
+                                                        <input type="button" id="buttonCountMinus" value="-">
+                                                        <input class="counter__metrics-value" id="buttonCountNumber"
+                                                            value="1">
+                                                        <input type="button" id="buttonCountPlus" value="+">
+                                                    </div>
+                                                </div>
+
+                                                <div class="counter__metrics-item">
+                                                    <h3>Подрезка %</h3>
+
+                                                    <select class="counter__metrics-stock">
+                                                        <option>0%</option>
+                                                        <option>5%</option>
+                                                        <option>10%</option>
+                                                        <option>15%</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form__list-item-wrapper">
+
+                                        <div class="form__list-item-wrapper-delete">x</div>
+
+                                        <div class="form__list-item">
+                                            <a href="#">
+                                                <img src="../images/33417846.jpg" alt="img">
+                                            </a>
+
+                                            <li class="form__list-block">
+                                                <p>Настенная пробка Corkstyle Wall Design</p>
+
+                                                <div class="form__list-block-item">
+                                                    <p>Цена:</p>
+                                                    <p>2500р (кв.м.)</p>
+                                                </div>
+
+                                            </li>
+                                        </div>
+
+                                        <div class="form__list-counter">
+                                            <div class="counter__metrics counter__metrics--wrap">
+
+                                                <div class="counter__metrics-item counter__metrics-item--gap">
+                                                    <h3
+                                                        class="counter__metrics-area-title counter__metrics-area-title--margin">
+                                                        Площадь пола</h3>
+
+                                                    <div class="counter__metrics-btns">
+                                                        <input type="button" id="buttonCountMinusArea" value="-">
+                                                        <input class="counter__metrics-value" id="buttonCountNumberArea"
+                                                            value="0.98">
+                                                        <input type="button" id="buttonCountPlusArea" value="+">
+                                                    </div>
+                                                </div>
+
+                                                <div class="counter__metrics-item">
+                                                    <h3
+                                                        class="counter__metrics-amount-title counter__metrics-amount-title--margin">
+                                                        Количество упаковок</h3>
+
+                                                    <div class="counter__metrics-btns">
+                                                        <input type="button" id="buttonCountMinus" value="-">
+                                                        <input class="counter__metrics-value" id="buttonCountNumber"
+                                                            value="1">
+                                                        <input type="button" id="buttonCountPlus" value="+">
+                                                    </div>
+                                                </div>
+
+                                                <div class="counter__metrics-item">
+                                                    <h3>Подрезка %</h3>
+
+                                                    <select class="counter__metrics-stock">
+                                                        <option>0%</option>
+                                                        <option>5%</option>
+                                                        <option>10%</option>
+                                                        <option>15%</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form__list-item-wrapper">
+
+                                        <div class="form__list-item-wrapper-delete">x</div>
+
+                                        <div class="form__list-item">
+                                            <a href="#">
+                                                <img src="../images/33417846.jpg" alt="img">
+                                            </a>
+
+                                            <li class="form__list-block">
+                                                <p>Настенная пробка Corkstyle Wall Design</p>
+
+                                                <div class="form__list-block-item">
+                                                    <p>Цена:</p>
+                                                    <p>2500р (кв.м.)</p>
+                                                </div>
+
+                                            </li>
+                                        </div>
+
+                                        <div class="form__list-counter">
+                                            <div class="counter__metrics counter__metrics--wrap">
+
+                                                <div class="counter__metrics-item counter__metrics-item--gap">
+                                                    <h3
+                                                        class="counter__metrics-area-title counter__metrics-area-title--margin">
+                                                        Площадь пола</h3>
+
+                                                    <div class="counter__metrics-btns">
+                                                        <input type="button" id="buttonCountMinusArea" value="-">
+                                                        <input class="counter__metrics-value" id="buttonCountNumberArea"
+                                                            value="0.98">
+                                                        <input type="button" id="buttonCountPlusArea" value="+">
+                                                    </div>
+                                                </div>
+
+                                                <div class="counter__metrics-item">
+                                                    <h3
+                                                        class="counter__metrics-amount-title counter__metrics-amount-title--margin">
+                                                        Количество упаковок</h3>
+
+                                                    <div class="counter__metrics-btns">
+                                                        <input type="button" id="buttonCountMinus" value="-">
+                                                        <input class="counter__metrics-value" id="buttonCountNumber"
+                                                            value="1">
+                                                        <input type="button" id="buttonCountPlus" value="+">
+                                                    </div>
+                                                </div>
+
+                                                <div class="counter__metrics-item">
+                                                    <h3>Подрезка %</h3>
+
+                                                    <select class="counter__metrics-stock">
+                                                        <option>0%</option>
+                                                        <option>5%</option>
+                                                        <option>10%</option>
+                                                        <option>15%</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <li class="form__list-item">
+                                        <p>Итоговая стоимость:</p>
+                                        <p>7500 руб.</p>
+                                    </li>
+                                </ul>
+
+                                <button class="form__btn" type="submit">Отправить Заявку</button>
+                            </form>
+                        </div>
+
+                        <div class="commodity__info">
+                            <h3 class="commodity__info-title">Замковые полы</h3>
+
+                            <div class="commodity__info-text">
+                                <p>Размер досок:</p>
+                                <p>915 х 305 мм</p>
                             </div>
 
-                            <div class="swiper-slide commodity__media-img">
-                                <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                            <div class="commodity__info-text">
+                                <p>Размер досок:</p>
+                                <p>915 х 305 мм</p>
                             </div>
 
-                            <div class="swiper-slide commodity__media-img">
-                                <img src="../images/33417846.jpg" alt="commodity">
+                            <div class="commodity__info-text">
+                                <p>Размер досок:</p>
+                                <p>915 х 305 мм</p>
                             </div>
 
-                            <div class="swiper-slide commodity__media-img">
-                                <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                            <div class="commodity__info-text">
+                                <p>Размер досок:</p>
+                                <p>915 х 305 мм</p>
                             </div>
 
-                            <div class="swiper-slide commodity__media-img">
-                                <img src="../images/33417846.jpg" alt="commodity">
+                            <div class="commodity__info-text">
+                                <p>Размер досок:</p>
+                                <p>915 х 305 мм</p>
                             </div>
 
-                            <div class="swiper-slide commodity__media-img">
-                                <img src="../images/photo_2023-11-30_17-.jpg" alt="commodity">
+                            <div class="commodity__info-text commodity__info-text--color">
+                                <p>Цена за кв.м:</p>
+                                <p>2500 руб.</p>
+                            </div>
+                        </div>
+
+                        <div class="commodity__info">
+                            <h3 class="commodity__info-title">Замковые полы</h3>
+
+                            <div class="commodity__info-text">
+                                <p>Размер досок:</p>
+                                <p>915 х 305 мм</p>
+                            </div>
+
+                            <div class="commodity__info-text">
+                                <p>Размер досок:</p>
+                                <p>915 х 305 мм</p>
+                            </div>
+
+                            <div class="commodity__info-text">
+                                <p>Размер досок:</p>
+                                <p>915 х 305 мм</p>
+                            </div>
+
+                            <div class="commodity__info-text">
+                                <p>Размер досок:</p>
+                                <p>915 х 305 мм</p>
+                            </div>
+
+                            <div class="commodity__info-text">
+                                <p>Размер досок:</p>
+                                <p>915 х 305 мм</p>
+                            </div>
+
+                            <div class="commodity__info-text commodity__info-text--color">
+                                <p>Цена за кв.м:</p>
+                                <p>2500 руб.</p>
+                            </div>
+                        </div>
+
+                        <div class="counter">
+                            <div class="counter__product-types">
+                                <button class="counter__product-types-item first-type" selected="true">Замковые
+                                    полы</button>
+                                <button class="counter__product-types-item second-type">Клейвовые полы</button>
+                            </div>
+
+                            <div class="counter__metrics">
+                                <div class="counter__metrics-item">
+                                    <h3 class="counter__metrics-area-title">Площадь пола</h3>
+
+                                    <div class="counter__metrics-btns">
+                                        <input type="button" id="buttonCountMinusArea" value="-">
+                                        <input class="counter__metrics-value" id="buttonCountNumberArea" value="0.98">
+                                        <input type="button" id="buttonCountPlusArea" value="+">
+                                    </div>
+                                </div>
+
+                                <div class="counter__metrics-item">
+                                    <h3 class="counter__metrics-amount-title">Количество упаковок</h3>
+
+                                    <div class="counter__metrics-btns">
+                                        <input type="button" id="buttonCountMinus" value="-">
+                                        <input class="counter__metrics-value" id="buttonCountNumber" value="1">
+                                        <input type="button" id="buttonCountPlus" value="+">
+                                    </div>
+                                </div>
+
+                                <div class="counter__metrics-item">
+                                    <h3>Подрезка %</h3>
+
+                                    <select class="counter__metrics-stock">
+                                        <option>0%</option>
+                                        <option>5%</option>
+                                        <option>10%</option>
+                                        <option>15%</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="counter__metrics-btns-buy">
+                                <p>Итого: <span id="price">2500</span> руб.</p>
+                                <a class="counter__metrics-btn-order openModal" data-modal="modal1">Оформить заказ</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="commodity__content-item-info">
-
-                    <div class="overlay" id="overlay"></div>
-                    
-                    <div class="modal" id="modal1">
-                        <button class="close-button" id="closeModal">x</button>
-
-                        <form class="modal__form application__form" action="">
-
-                            <div class="application__form-item">
-                                <label>Как к вам обращаться?</label>
-                                <input type="text" pattern="^[A-Za-zА-Яа-яЁё]" required>
-                            </div>
-
-                            <div class="application__form-item">
-                                <label for="phone">Ваш номер телефона</label>
-                                <input type="tel" name="phone" value="+(7)"
-                                    required />
-                            </div>
-
-                            <ul class="modal__form-list">
-                                <li class="modal__form-list-item">
-                                    <p>Тип:</p>
-                                    <p>Замковый пол</p>
-                                </li>
-
-                                <li class="modal__form-list-item">
-                                    <p>Площадь:</p>
-                                    <p>2.94</p>
-                                </li>
-
-                                <li class="modal__form-list-item">
-                                    <p>Количество:</p>
-                                    <p>3</p>
-                                </li>
-
-                                <li class="modal__form-list-item">
-                                    <p>Подрезка:</p>
-                                    <p>5%</p>
-                                </li>
-
-                                <li class="modal__form-list-item">
-                                    <p>Товар:</p>
-                                    <p>ПВХ плитка</p>
-                                </li>
-
-                                <li class="modal__form-list-item">
-                                    <p>Итоговая цена:</p>
-                                    <p>7500 руб.</p>
-                                </li>
-                            </ul>
-
-                            <button class="application__btn" type="submit">Отправить Заявку</button>
-                        </form>
+                <div class="tabs">
+                    <div class="tabs__nav tabs-nav">
+                        <div class="tabs-nav__item is-active" data-tab-name="tab-1">Характеристики</div>
+                        <div class="tabs-nav__item" data-tab-name="tab-2">Описание</div>
                     </div>
 
-                    <div class="commodity__info">
-                        <h3 class="commodity__info-title">Замковые полы</h3>
+                    <div class="tabs__content">
+                        <div class="tab is-active tab-1">
 
-                        <div class="commodity__info-text">
-                            <p>Размер досок:</p>
-                            <p>915 х 305 мм</p>
-                        </div>
+                            <div class="commodity__properties-characteristics-info-wrapper">
 
-                        <div class="commodity__info-text">
-                            <p>Размер досок:</p>
-                            <p>915 х 305 мм</p>
-                        </div>
+                                <div class="commodity__properties-characteristics-info">
 
-                        <div class="commodity__info-text">
-                            <p>Размер досок:</p>
-                            <p>915 х 305 мм</p>
-                        </div>
+                                    <h3 class="commodity__properties-title">Общие характеристики</h3>
 
-                        <div class="commodity__info-text">
-                            <p>Размер досок:</p>
-                            <p>915 х 305 мм</p>
-                        </div>
 
-                        <div class="commodity__info-text">
-                            <p>Размер досок:</p>
-                            <p>915 х 305 мм</p>
-                        </div>
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
 
-                        <div class="commodity__info-text commodity__info-text--color">
-                            <p>Цена за кв.м:</p>
-                            <p>2500 руб.</p>
-                        </div>
-                    </div>
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
 
-                    <div class="commodity__info">
-                        <h3 class="commodity__info-title">Замковые полы</h3>
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
 
-                        <div class="commodity__info-text">
-                            <p>Размер досок:</p>
-                            <p>915 х 305 мм</p>
-                        </div>
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
 
-                        <div class="commodity__info-text">
-                            <p>Размер досок:</p>
-                            <p>915 х 305 мм</p>
-                        </div>
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
 
-                        <div class="commodity__info-text">
-                            <p>Размер досок:</p>
-                            <p>915 х 305 мм</p>
-                        </div>
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
 
-                        <div class="commodity__info-text">
-                            <p>Размер досок:</p>
-                            <p>915 х 305 мм</p>
-                        </div>
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
+                                </div>
 
-                        <div class="commodity__info-text">
-                            <p>Размер досок:</p>
-                            <p>915 х 305 мм</p>
-                        </div>
+                                <div class="commodity__properties-characteristics-info">
 
-                        <div class="commodity__info-text commodity__info-text--color">
-                            <p>Цена за кв.м:</p>
-                            <p>2500 руб.</p>
-                        </div>
-                    </div>
+                                    <h3 class="commodity__properties-title">Общие характеристики</h3>
 
-                    <div class="commodity__info-btns">
-                        <div class="commodity__info-btns-products">
-                            <button class="commodity__info-btns-products-item first" selected="true">Замковые
-                                полы</button>
-                            <button class="commodity__info-btns-products-item second">Клейвовые полы</button>
-                        </div>
 
-                        <div class="commodity__info-btns-item">
-                            <div class="commodity__info-counter">
-                                <h3 class="commodity__info-counter-title-area">Площадь пола</h3>
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
 
-                                <div class="commodity__info-counter__btns">
-                                    <input type="button" id="buttonCountMinusArea" value="-">
-                                    <input class="commodity__info-counter-value" id="buttonCountNumberArea"
-                                        value="0.98">
-                                    <input type="button" id="buttonCountPlusArea" value="+">
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
+
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">AAAAAAA</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
+
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
+
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
+
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
+
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
+                                </div>
+
+                                <div class="commodity__properties-characteristics-info">
+
+                                    <h3 class="commodity__properties-title">Общие характеристики</h3>
+
+
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
+
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
+
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
+
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
+
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
+
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
+
+                                    <div class="commodity__properties-characteristics-info-item">
+                                        <p class="commodity__properties-characteristics-info-name">Материал</p>
+                                        <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="commodity__info-counter">
-                                <h3 class="commodity__info-counter-title-amount">Количество упаковок</h3>
-
-                                <div class="commodity__info-counter__btns">
-                                    <input type="button" id="buttonCountMinus" value="-">
-                                    <input class="commodity__info-counter-value" id="buttonCountNumber" value="1">
-                                    <input type="button" id="buttonCountPlus" value="+">
-                                </div>
-                            </div>
-
-                            <div class="commodity__info-counter">
-                                <h3 class="commodity__info-counter-title">Подрезка %</h3>
-
-                                <select class="commodity__info-counter-stock">
-                                    <option>0%</option>
-                                    <option>5%</option>
-                                    <option>10%</option>
-                                    <option>15%</option>
-                                </select>
-                            </div>
                         </div>
 
-                        <div class="commodity__info-btns-buy">
-                            <p>Итого: <span id="price">2500</span> руб.</p>
-                            <a class="commodity__info-btn openModal" data-modal="modal1">Оформить заказ</a>
+                        <div class="tab tab-2">Пробковый пол Fantasie из коллекции NATURAL CORK производится из
+                            натуральной.
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="tabs">
-                <div class="tabs__nav tabs-nav">
-                    <div class="tabs-nav__item is-active" data-tab-name="tab-1">Характеристики</div>
-                    <div class="tabs-nav__item" data-tab-name="tab-2">Описание</div>
+                <div class="commodity__properties-download-btns">
+                    <a href="#" download="Инструкция по укладке">Инструкция по укладке</a>
+                    <a href="#" download="Рекомендации по эксплуатации">Рекомендации по эксплуатации</a>
                 </div>
-
-                <div class="tabs__content">
-                    <div class="tab is-active tab-1">
-
-                        <div class="commodity__properties-characteristics-info-wrapper">
-
-                            <div class="commodity__properties-characteristics-info">
-
-                                <h3 class="commodity__properties-title">Общие характеристики</h3>
-
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-                            </div>
-
-                            <div class="commodity__properties-characteristics-info">
-
-                                <h3 class="commodity__properties-title">Общие характеристики</h3>
-
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">AAAAAAA</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-                            </div>
-
-                            <div class="commodity__properties-characteristics-info">
-
-                                <h3 class="commodity__properties-title">Общие характеристики</h3>
-
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-
-                                <div class="commodity__properties-characteristics-info-item">
-                                    <p class="commodity__properties-characteristics-info-name">Материал</p>
-                                    <p class="commodity__properties-characteristics-info-value">ПВХ, LVT</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab tab-2">Пробковый пол Fantasie из коллекции NATURAL CORK производится из натуральной.
-                    </div>
-                </div>
-            </div>
-
-            <div class="commodity__properties-download-btns">
-                <a href="#" download="Инструкция по укладке">Инструкция по укладке</a>
-                <a href="#" download="Рекомендации по эксплуатации">Рекомендации по эксплуатации</a>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
 
         <section class="promotions">
             <h2 class="promotions__title">Акции</h2>
+
             <p class="promotions__discount"><span>от -3% до -10%</span> на товары из раздела</p>
 
             <div class="swiper mySwiper3" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide swiper-slide--opacity">
-                        
+
                         <a href="#">
                             <img src="../images/33417846.jpg" alt="wall">
                             <p class="promotions__swiper-discount">Скидка 10%</p>
                         </a>
 
-                        <img class="promotions__btn-heart" id="buttonImage" src="../icons/heart.svg" alt="Heart">
-                    </div>
-                    
-                    <div class="swiper-slide swiper-slide--opacity">
-                        
-                        <a href="#">
-                            <img src="../images/33417846.jpg" alt="wall">
-                            <p class="promotions__swiper-discount">Скидка 10%</p>
-                        </a>
-
-                        <img class="promotions__btn-heart" id="buttonImage" src="../icons/heart.svg" alt="Heart">
+                        <div class="heart-button" id="heartButton">
+                            <img class="promotions__btn-heart" id="heartButtonImage" src="../icons/heart.svg"
+                                alt="Heart">
+                        </div>
                     </div>
 
                     <div class="swiper-slide swiper-slide--opacity">
-                        
+
                         <a href="#">
                             <img src="../images/33417846.jpg" alt="wall">
                             <p class="promotions__swiper-discount">Скидка 10%</p>
                         </a>
 
-                        <img class="promotions__btn-heart" id="buttonImage" src="../icons/heart.svg" alt="Heart">
+                        <div class="heart-button" id="heartButton">
+                            <img class="promotions__btn-heart" id="heartButtonImage" src="../icons/heart.svg"
+                                alt="Heart">
+                        </div>
                     </div>
 
                     <div class="swiper-slide swiper-slide--opacity">
-                        
+
                         <a href="#">
                             <img src="../images/33417846.jpg" alt="wall">
                             <p class="promotions__swiper-discount">Скидка 10%</p>
                         </a>
 
-                        <img class="promotions__btn-heart" id="buttonImage" src="../icons/heart.svg" alt="Heart">
+                        <div class="heart-button" id="heartButton">
+                            <img class="promotions__btn-heart" id="heartButtonImage" src="../icons/heart.svg"
+                                alt="Heart">
+                        </div>
                     </div>
 
                     <div class="swiper-slide swiper-slide--opacity">
-                        
+
                         <a href="#">
                             <img src="../images/33417846.jpg" alt="wall">
                             <p class="promotions__swiper-discount">Скидка 10%</p>
                         </a>
 
-                        <img class="promotions__btn-heart" id="buttonImage" src="../icons/heart.svg" alt="Heart">
+                        <div class="heart-button" id="heartButton">
+                            <img class="promotions__btn-heart" id="heartButtonImage" src="../icons/heart.svg"
+                                alt="Heart">
+                        </div>
                     </div>
 
                     <div class="swiper-slide swiper-slide--opacity">
-                        
+
                         <a href="#">
                             <img src="../images/33417846.jpg" alt="wall">
                             <p class="promotions__swiper-discount">Скидка 10%</p>
                         </a>
 
-                        <img class="promotions__btn-heart" id="buttonImage" src="../icons/heart.svg" alt="Heart">
+                        <div class="heart-button" id="heartButton">
+                            <img class="promotions__btn-heart" id="heartButtonImage" src="../icons/heart.svg"
+                                alt="Heart">
+                        </div>
                     </div>
 
                     <div class="swiper-slide swiper-slide--opacity">
-                        
+
                         <a href="#">
                             <img src="../images/33417846.jpg" alt="wall">
                             <p class="promotions__swiper-discount">Скидка 10%</p>
                         </a>
 
-                        <img class="promotions__btn-heart" id="buttonImage" src="../icons/heart.svg" alt="Heart">
+                        <div class="heart-button" id="heartButton">
+                            <img class="promotions__btn-heart" id="heartButtonImage" src="../icons/heart.svg"
+                                alt="Heart">
+                        </div>
                     </div>
 
                     <div class="swiper-slide swiper-slide--opacity">
-                        
+
                         <a href="#">
                             <img src="../images/33417846.jpg" alt="wall">
                             <p class="promotions__swiper-discount">Скидка 10%</p>
                         </a>
 
-                        <img class="promotions__btn-heart" id="buttonImage" src="../icons/heart.svg" alt="Heart">
+                        <div class="heart-button" id="heartButton">
+                            <img class="promotions__btn-heart" id="heartButtonImage" src="../icons/heart.svg"
+                                alt="Heart">
+                        </div>
                     </div>
 
                     <div class="swiper-slide swiper-slide--opacity">
-                        
+
                         <a href="#">
                             <img src="../images/33417846.jpg" alt="wall">
                             <p class="promotions__swiper-discount">Скидка 10%</p>
                         </a>
 
-                        <img class="promotions__btn-heart" id="buttonImage" src="../icons/heart.svg" alt="Heart">
+                        <div class="heart-button" id="heartButton">
+                            <img class="promotions__btn-heart" id="heartButtonImage" src="../icons/heart.svg"
+                                alt="Heart">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide--opacity">
+
+                        <a href="#">
+                            <img src="../images/33417846.jpg" alt="wall">
+                            <p class="promotions__swiper-discount">Скидка 10%</p>
+                        </a>
+
+                        <div class="heart-button" id="heartButton">
+                            <img class="promotions__btn-heart" id="heartButtonImage" src="../icons/heart.svg"
+                                alt="Heart">
+                        </div>
                     </div>
 
                 </div>
@@ -866,197 +1086,230 @@
     <footer class="footer">
         <div class="container">
 
-        <div class="footer__info">
+            <div class="footer__info">
 
-            <details>
-                <summary>
-                    Общая информация
-                </summary>
+                <details open>
+                    <summary>
+                        Общая информация
+                    </summary>
 
-                <nav class="footer__menu">
+                    <nav class="footer__menu">
 
-                    <ul class="footer__menu-list">
+                        <ul class="footer__menu-list">
 
-                        <li class="footer__menu-list-main">
-                            <a href="../index.html">Главная</a>
-                        </li>
+                            <li class="footer__menu-list-main">
+                                <a href="../index.html">Главная</a>
+                            </li>
 
-                        <li class="footer__menu-list-catalog">
-                            <a href="../pages/catalog.html">Каталог</a>
-                        </li>
+                            <li class="footer__menu-list-catalog">
+                                <a href="../pages/catalog.html">Каталог</a>
+                            </li>
 
-                        <li class="footer__menu-list-services">
-                            <a href="../pages/services.html">Услуги</a>
-                        </li>
+                            <li class="footer__menu-list-services">
+                                <a href="../pages/services.html">Услуги</a>
+                            </li>
 
-                        <li class="footer__menu-list-promotion">
-                            <a href="../pages/promotion-catalog.html">Акции</a>
-                        </li>
+                            <li class="footer__menu-list-promotion">
+                                <a href="../pages/promotion-catalog.html">Акции</a>
+                            </li>
 
-                        <li class="footer__menu-list-useful-video">
-                            <a href="../pages/useful-videos.html">Полезное видео</a>
-                        </li>
+                            <li class="footer__menu-list-useful-video">
+                                <a href="../pages/useful-videos.html">Полезное видео</a>
+                            </li>
 
                         </ul>
 
                         <ul class="footer__menu-list">
 
-                        <li class="footer__menu-list-useful-information">
-                            <a href="../pages/useful-videos.html">Полезная информация</a>
-                        </li>
+                            <li class="footer__menu-list-useful-information">
+                                <a href="../pages/useful-videos.html">Полезная информация</a>
+                            </li>
 
-                        <li class="footer__menu-list-about">
-                            <a href="../pages/about.html">О нас</a>
-                        </li>
+                            <li class="footer__menu-list-about">
+                                <a href="../pages/about.html">О нас</a>
+                            </li>
 
-                        <li class="footer__menu-list-our-job">
-                            <a href="../pages/services.html">Наши работы</a>
-                        </li>
+                            <li class="footer__menu-list-our-job">
+                                <a href="../pages/services.html">Наши работы</a>
+                            </li>
 
-                        <li class="footer__menu-list-contacts">
-                            <a href="../pages/contacts.html">Контакты</a>
-                        </li>
+                            <li class="footer__menu-list-contacts">
+                                <a href="../pages/contacts.html">Контакты</a>
+                            </li>
 
-                    </ul>
-                </nav>
-            </details>
+                        </ul>
+                    </nav>
+                </details>
 
-            <details>
-                <summary>
-                    Каталог напольных покрытий
-                </summary>
+                <details open>
+                    <summary>
+                        Каталог напольных покрытий
+                    </summary>
 
-            <div class="footer__catalog">
+                    <div class="footer__catalog">
 
-            <ul class="footer__catalog-list">
+                        <ul class="footer__catalog-list">
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-            </ul>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
+                        </ul>
 
-            <ul class="footer__catalog-list">
+                        <ul class="footer__catalog-list">
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-                
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-                
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-                
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-                
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-                
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-            </ul>
-        </div>
-            </details>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-            <details>
-                <summary>
-                    Контактная информация
-                </summary>
-                
-            <div class="footer__contacts">
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <div class="header__content-info-location-point">
-                    <img src="../icons/location.svg" alt="Location">
-                    <p>Санкт-Петербург</p>
-                </div>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <div class="header__content-info-location-point">
-                    <img src="../icons/sec-location.svg" alt="Location">
-                    <p>Ленинский пр. 128 к. 2 ТЦ «Нарва» 3 этаж</p>
-                </div>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <div class="header__content-info-contact-schedule">
-                    <img src="../icons/clock.svg" alt="Clock">
-                    <p>Ежедневно 10:00 - 20:00</p>
-                </div>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <div>
-                    <a href="tel:+79213466257" class="footer__contacts-number">+7 921 346 62 57</a>
-                </div>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
 
-                <a href="#" class="footer__contacts-email">
-                    <img src="../icons/clock.svg" alt="Clock">
-                    <p>in@mail.ru</p>
+                <details open>
+                    <summary>
+                        Контактная информация
+                    </summary>
+
+                    <div class="footer__contacts">
+
+                        <div class="header__content-info-location-point">
+                            <img src="../icons/location.svg" alt="Location">
+                            <p>Санкт-Петербург</p>
+                        </div>
+
+                        <div class="header__content-info-location-point">
+                            <img src="../icons/sec-location.svg" alt="Location">
+                            <p>Ленинский пр. 128 к. 2 ТЦ «Нарва» 3 этаж</p>
+                        </div>
+
+                        <div class="header__content-info-contact-schedule">
+                            <img src="../icons/clock.svg" alt="Clock">
+                            <p>Ежедневно 10:00 - 20:00</p>
+                        </div>
+
+                        <div>
+                            <a href="tel:+79213466257" class="footer__contacts-number">+7 921 346 62 57</a>
+                        </div>
+
+                        <a href="#" class="footer__contacts-email">
+                            <img src="../icons/clock.svg" alt="Clock">
+                            <p>in@mail.ru</p>
+                        </a>
+
+                        <div class="footer__contacts-btn">
+                            <a href="#">Связаться</a>
+                        </div>
+                    </div>
+                </details>
+            </div>
+
+            <div class="footer__mid">
+
+                <a href="../index.html" class="footer__logo">
+                    <img src="../icons/logo.png" alt="Logo">
                 </a>
 
-                <div class="footer__contacts-btn">
-                    <a href="#">Связаться</a>
+                <form class="header__content-b-line-search" action="">
+                    <input type="text" placeholder="Поиск на Енот Паркет">
+                </form>
+
+                <div class="footer__messengers">
+                    <a href="#">
+                        <img src="../icons/tg.svg" alt="tg">
+                    </a>
+
+                    <a href="#">
+                        <img src="../icons/whats.svg" alt="whatsapp">
+                    </a>
+
+                    <a href="#">
+                        <img src="../icons/youtube.svg" alt="youtube">
+                    </a>
+
+                    <a href="#">
+                        <img src="../icons/vk.svg" alt="vk">
+                    </a>
                 </div>
             </div>
-            </details>
-    </div>
 
-        <div class="footer__mid">
-            
-            <a href="../index.html" class="footer__logo">
-                <img src="../icons/logo.png" alt="Logo">
-            </a>
-
-            <form class="header__content-b-line-search" action="">
-                <input type="text">
-            </form>
-
-            <div class="footer__messengers">
-                <a href="#">
-                    <img src="../icons/tg.svg" alt="tg">
-                </a>
-
-                <a href="#">
-                    <img src="../icons/whats.svg" alt="whatsapp">
-                </a>
-
-                <a href="#">
-                    <img src="../icons/youtube.svg" alt="youtube">
-                </a>
-
-                <a href="#">
-                    <img src="../icons/vk.svg" alt="vk">
-                </a>
-            </div>
-        </div>
-
-        <p class="footer__privacy">© ЕнотПаркет. Все права защищены. <br>
-            Информация, предоставленная на сайте, не является публичной офертой
-        </p>
+            <p class="footer__privacy">© ЕнотПаркет. Все права защищены. <br>
+                Информация, предоставленная на сайте, не является публичной офертой
+            </p>
 
         </div>
     </footer>
+    
+    <section class="mobile-panel">
+
+        <div class="mobile-panel__search">
+            <img src="../icons/search-mob-panel.svg" alt="Search">
+        </div>
+
+        <a href="#" class="mobile-panel__rutube">
+            <img src="../icons/rutube.svg" alt="Rutube">
+        </a>
+
+        <a href="#">
+            <img src="../icons/whats-mob-panel.svg" alt="WhatsApp">
+        </a>
+
+        <a href="#">
+            <img src="../icons/tg-mob-panel.svg" alt="TG">
+        </a>
+
+        <div class="mobile-panel__heart openModal" data-modal="modal1">
+            <img src="../icons/heart-mob-panel.svg" alt="Heart">
+            <div class="mobile-panel__counter">0</div>
+        </div>
+
+        <div>
+            <img src="../icons/cart-mob-panel.svg" alt="Cart">
+        </div>
+
+        <a href="#">
+            <img src="../icons/phone-mob-panel.svg" alt="Phone">
+        </a>
+
+    </section>
 
     <script src="../script.js"></script>
     <script src="../commodity.js"></script>

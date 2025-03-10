@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <section class="header-fixed-wrapper">
         <div class="container">
             <div class="header-fixed">
@@ -34,7 +35,7 @@
                 <div class="header-fixed__second-item">
 
                     <form class="header__content-b-line-search" action="">
-                        <input type="text">
+                        <input type="text" placeholder="Поиск на Енот Паркет">
                     </form>
 
                     <div class="header-fixed__phone-number">
@@ -43,9 +44,9 @@
                 </div>
 
                 <div class="header-fixed__btns">
-                    <a href="#">
+                    <a class="openModal" data-modal="modal1">
                         <p>Избранное</p>
-                        <img src="../icons/heart.svg" alt="Heart">
+                        <img src="../icons/heart.svg" alt="Heart" class="header-fixed__btns-heart">
                         <p>0 шт.</p>
                     </a>
 
@@ -108,10 +109,10 @@
                 </div>
             </div>
 
-            <nav class="header__menu">
+            <nav class="header__menu" id="menu">
 
                 <form class="header__menu-form header__content-b-line-search" action="">
-                    <input type="text">
+                    <input type="text" placeholder="Поиск на Енот Паркет">
                 </form>
 
                 <ul class="header__menu-list">
@@ -158,7 +159,7 @@
                 </ul>
             </nav>
 
-            <div class="header-mobile__burger">
+            <div class="header-mobile__burger" data-menu="menu">
                 <span class="header-mobile__burger-line1"></span>
 
                 <span class="header-mobile__burger-line2"></span>
@@ -263,12 +264,12 @@
                         <div class="header__content-b-line">
 
                             <form class="header__content-b-line-search" action="">
-                                <input type="text">
+                                <input type="text" placeholder="Поиск на Енот Паркет">
                             </form>
 
                             <div class="header__content-b-line-added-btns">
 
-                                <a href="#">
+                                <a class="openModal" data-modal="modal1">
                                     <p>Избранное</p>
                                     <img src="../icons/heart.svg" alt="Heart">
                                 </a>
@@ -342,14 +343,246 @@
                 </div>
             </div>
         </div>
-        </div>
     </header>
 
     <main class="main">
+
+        <div data-modal="modal1" class="heart-button-modal openModal hidden">
+            <img src="../icons/heart.svg" alt="Heart">
+            <div class="heart-button-counter">13</div>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="modal" id="modal1">
+            <button class="close-button" id="closeModal">x</button>
+
+            <form class="form" action="">
+
+                <div class="form__items">
+                    <label class="form__items-label">Как к вам обращаться?</label>
+                    <input class="form__items-input" type="text" pattern="^[A-Za-zА-Яа-яЁё]" required />
+                </div>
+
+                <div class="form__items">
+                    <label class="form__items-label" for="phone">Ваш номер телефона</label>
+                    <input class="form__items-input" type="tel" name="phone" value="+(7)" required />
+                </div>
+
+                <div class="form__items">
+                    <label class="form__items-label" for="email">Ваш Email</label>
+                    <input class="form__items-input" type="tel" name="email" />
+                </div>
+
+                <div class="form__items">
+                    <label class="form__items-label" for="comm">Комментарий</label>
+                    <textarea class="form__items-textarea" name="comm"></textarea>
+                </div>
+
+                <ul class="form__list">
+
+                    <div class="form__list-favs">
+                        <div class="form__list-favs-img">
+                            <img src="../icons/heart.svg" alt="Favorites">
+                        </div>
+
+                        <p class="form__list-favs-text">Нет товаров в избранном</p>
+
+                        <a class="form__list-favs-btn" href="../pages/catalog.html">Перейти в каталог</a>
+                    </div>
+
+                    <div class="form__list-item-wrapper">
+
+                        <div class="form__list-item-wrapper-delete">x</div>
+
+                        <div class="form__list-item">
+                            <a href="#">
+                                <img src="../images/33417846.jpg" alt="img">
+                            </a>
+
+                            <li class="form__list-block">
+                                <p>Настенная пробка Corkstyle Wall Design</p>
+
+                                <div class="form__list-block-item">
+                                    <p>Цена:</p>
+                                    <p>2500р (кв.м.)</p>
+                                </div>
+
+                            </li>
+                        </div>
+
+                        <div class="form__list-counter">
+                            <div class="counter__metrics counter__metrics--wrap">
+
+                                <div class="counter__metrics-item counter__metrics-item--gap">
+                                    <h3 class="counter__metrics-area-title counter__metrics-area-title--margin">Площадь
+                                        пола</h3>
+
+                                    <div class="counter__metrics-btns">
+                                        <input type="button" id="buttonCountMinusArea" value="-">
+                                        <input class="counter__metrics-value" id="buttonCountNumberArea" value="0.98">
+                                        <input type="button" id="buttonCountPlusArea" value="+">
+                                    </div>
+                                </div>
+
+                                <div class="counter__metrics-item">
+                                    <h3 class="counter__metrics-amount-title counter__metrics-amount-title--margin">
+                                        Количество упаковок</h3>
+
+                                    <div class="counter__metrics-btns">
+                                        <input type="button" id="buttonCountMinus" value="-">
+                                        <input class="counter__metrics-value" id="buttonCountNumber" value="1">
+                                        <input type="button" id="buttonCountPlus" value="+">
+                                    </div>
+                                </div>
+
+                                <div class="counter__metrics-item">
+                                    <h3>Подрезка %</h3>
+
+                                    <select class="counter__metrics-stock">
+                                        <option>0%</option>
+                                        <option>5%</option>
+                                        <option>10%</option>
+                                        <option>15%</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__list-item-wrapper">
+
+                        <div class="form__list-item-wrapper-delete">x</div>
+
+                        <div class="form__list-item">
+                            <a href="#">
+                                <img src="../images/33417846.jpg" alt="img">
+                            </a>
+
+                            <li class="form__list-block">
+                                <p>Настенная пробка Corkstyle Wall Design</p>
+
+                                <div class="form__list-block-item">
+                                    <p>Цена:</p>
+                                    <p>2500р (кв.м.)</p>
+                                </div>
+
+                            </li>
+                        </div>
+
+                        <div class="form__list-counter">
+                            <div class="counter__metrics counter__metrics--wrap">
+
+                                <div class="counter__metrics-item counter__metrics-item--gap">
+                                    <h3 class="counter__metrics-area-title counter__metrics-area-title--margin">Площадь
+                                        пола</h3>
+
+                                    <div class="counter__metrics-btns">
+                                        <input type="button" id="buttonCountMinusArea" value="-">
+                                        <input class="counter__metrics-value" id="buttonCountNumberArea" value="0.98">
+                                        <input type="button" id="buttonCountPlusArea" value="+">
+                                    </div>
+                                </div>
+
+                                <div class="counter__metrics-item">
+                                    <h3 class="counter__metrics-amount-title counter__metrics-amount-title--margin">
+                                        Количество упаковок</h3>
+
+                                    <div class="counter__metrics-btns">
+                                        <input type="button" id="buttonCountMinus" value="-">
+                                        <input class="counter__metrics-value" id="buttonCountNumber" value="1">
+                                        <input type="button" id="buttonCountPlus" value="+">
+                                    </div>
+                                </div>
+
+                                <div class="counter__metrics-item">
+                                    <h3>Подрезка %</h3>
+
+                                    <select class="counter__metrics-stock">
+                                        <option>0%</option>
+                                        <option>5%</option>
+                                        <option>10%</option>
+                                        <option>15%</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__list-item-wrapper">
+
+                        <div class="form__list-item-wrapper-delete">x</div>
+
+                        <div class="form__list-item">
+                            <a href="#">
+                                <img src="../images/33417846.jpg" alt="img">
+                            </a>
+
+                            <li class="form__list-block">
+                                <p>Настенная пробка Corkstyle Wall Design</p>
+
+                                <div class="form__list-block-item">
+                                    <p>Цена:</p>
+                                    <p>2500р (кв.м.)</p>
+                                </div>
+
+                            </li>
+                        </div>
+
+                        <div class="form__list-counter">
+                            <div class="counter__metrics counter__metrics--wrap">
+
+                                <div class="counter__metrics-item counter__metrics-item--gap">
+                                    <h3 class="counter__metrics-area-title counter__metrics-area-title--margin">Площадь
+                                        пола</h3>
+
+                                    <div class="counter__metrics-btns">
+                                        <input type="button" id="buttonCountMinusArea" value="-">
+                                        <input class="counter__metrics-value" id="buttonCountNumberArea" value="0.98">
+                                        <input type="button" id="buttonCountPlusArea" value="+">
+                                    </div>
+                                </div>
+
+                                <div class="counter__metrics-item">
+                                    <h3 class="counter__metrics-amount-title counter__metrics-amount-title--margin">
+                                        Количество упаковок</h3>
+
+                                    <div class="counter__metrics-btns">
+                                        <input type="button" id="buttonCountMinus" value="-">
+                                        <input class="counter__metrics-value" id="buttonCountNumber" value="1">
+                                        <input type="button" id="buttonCountPlus" value="+">
+                                    </div>
+                                </div>
+
+                                <div class="counter__metrics-item">
+                                    <h3>Подрезка %</h3>
+
+                                    <select class="counter__metrics-stock">
+                                        <option>0%</option>
+                                        <option>5%</option>
+                                        <option>10%</option>
+                                        <option>15%</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <li class="form__list-item">
+                        <p>Итоговая стоимость:</p>
+                        <p>7500 руб.</p>
+                    </li>
+                </ul>
+
+                <button class="form__btn" type="submit">Отправить Заявку</button>
+            </form>
+        </div>
+
         <div class="container">
             <div class="catalog">
                 <ul class="breadcrumbs">
-                    <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="../index.html">Главная</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="../index.html">Главная</a>
+                    </li>
                     <li><a class="breadcrumbs__item-link--color">Полезное видео</a></li>
                 </ul>
 
@@ -398,198 +631,230 @@
     <footer class="footer">
         <div class="container">
 
-        <div class="footer__info">
+            <div class="footer__info">
 
-            <details>
-                <summary>
-                    Общая информация
-                </summary>
+                <details open>
+                    <summary>
+                        Общая информация
+                    </summary>
 
-                <nav class="footer__menu">
+                    <nav class="footer__menu">
 
-                    <ul class="footer__menu-list">
+                        <ul class="footer__menu-list">
 
-                        <li class="footer__menu-list-main">
-                            <a href="../index.html">Главная</a>
-                        </li>
+                            <li class="footer__menu-list-main">
+                                <a href="../index.html">Главная</a>
+                            </li>
 
-                        <li class="footer__menu-list-catalog">
-                            <a href="../pages/catalog.html">Каталог</a>
-                        </li>
+                            <li class="footer__menu-list-catalog">
+                                <a href="../pages/catalog.html">Каталог</a>
+                            </li>
 
-                        <li class="footer__menu-list-services">
-                            <a href="../pages/services.html">Услуги</a>
-                        </li>
+                            <li class="footer__menu-list-services">
+                                <a href="../pages/services.html">Услуги</a>
+                            </li>
 
-                        <li class="footer__menu-list-promotion">
-                            <a href="../pages/promotion-catalog.html">Акции</a>
-                        </li>
+                            <li class="footer__menu-list-promotion">
+                                <a href="../pages/promotion-catalog.html">Акции</a>
+                            </li>
 
-                        <li class="footer__menu-list-useful-video">
-                            <a href="../pages/useful-videos.html">Полезное видео</a>
-                        </li>
+                            <li class="footer__menu-list-useful-video">
+                                <a href="../pages/useful-videos.html">Полезное видео</a>
+                            </li>
 
                         </ul>
 
                         <ul class="footer__menu-list">
 
-                        <li class="footer__menu-list-useful-information">
-                            <a href="../pages/useful-videos.html">Полезная информация</a>
-                        </li>
+                            <li class="footer__menu-list-useful-information">
+                                <a href="../pages/useful-videos.html">Полезная информация</a>
+                            </li>
 
-                        <li class="footer__menu-list-about">
-                            <a href="../pages/about.html">О нас</a>
-                        </li>
+                            <li class="footer__menu-list-about">
+                                <a href="../pages/about.html">О нас</a>
+                            </li>
 
-                        <li class="footer__menu-list-our-job">
-                            <a href="../pages/services.html">Наши работы</a>
-                        </li>
+                            <li class="footer__menu-list-our-job">
+                                <a href="../pages/services.html">Наши работы</a>
+                            </li>
 
-                        <li class="footer__menu-list-contacts">
-                            <a href="../pages/contacts.html">Контакты</a>
-                        </li>
+                            <li class="footer__menu-list-contacts">
+                                <a href="../pages/contacts.html">Контакты</a>
+                            </li>
 
-                    </ul>
-                </nav>
-            </details>
+                        </ul>
+                    </nav>
+                </details>
 
-            <details>
-                <summary>
-                    Каталог напольных покрытий
-                </summary>
+                <details open>
+                    <summary>
+                        Каталог напольных покрытий
+                    </summary>
 
-            <div class="footer__catalog">
+                    <div class="footer__catalog">
 
-            <ul class="footer__catalog-list">
+                        <ul class="footer__catalog-list">
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-            </ul>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
+                        </ul>
 
-            <ul class="footer__catalog-list">
+                        <ul class="footer__catalog-list">
 
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-                
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-                
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-                
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-                
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-                
-                <li class="footer__catalog-list-item">
-                    <a href="#">Ламинат</a>
-                </li>
-            </ul>
-        </div>
-            </details>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-            <details>
-                <summary>
-                    Контактная информация
-                </summary>
-                
-            <div class="footer__contacts">
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <div class="header__content-info-location-point">
-                    <img src="../icons/location.svg" alt="Location">
-                    <p>Санкт-Петербург</p>
-                </div>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <div class="header__content-info-location-point">
-                    <img src="../icons/sec-location.svg" alt="Location">
-                    <p>Ленинский пр. 128 к. 2 ТЦ «Нарва» 3 этаж</p>
-                </div>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <div class="header__content-info-contact-schedule">
-                    <img src="../icons/clock.svg" alt="Clock">
-                    <p>Ежедневно 10:00 - 20:00</p>
-                </div>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
 
-                <div>
-                    <a href="tel:+79213466257" class="footer__contacts-number">+7 921 346 62 57</a>
-                </div>
+                            <li class="footer__catalog-list-item">
+                                <a href="#">Ламинат</a>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
 
-                <a href="#" class="footer__contacts-email">
-                    <img src="../icons/clock.svg" alt="Clock">
-                    <p>in@mail.ru</p>
+                <details open>
+                    <summary>
+                        Контактная информация
+                    </summary>
+
+                    <div class="footer__contacts">
+
+                        <div class="header__content-info-location-point">
+                            <img src="../icons/location.svg" alt="Location">
+                            <p>Санкт-Петербург</p>
+                        </div>
+
+                        <div class="header__content-info-location-point">
+                            <img src="../icons/sec-location.svg" alt="Location">
+                            <p>Ленинский пр. 128 к. 2 ТЦ «Нарва» 3 этаж</p>
+                        </div>
+
+                        <div class="header__content-info-contact-schedule">
+                            <img src="../icons/clock.svg" alt="Clock">
+                            <p>Ежедневно 10:00 - 20:00</p>
+                        </div>
+
+                        <div>
+                            <a href="tel:+79213466257" class="footer__contacts-number">+7 921 346 62 57</a>
+                        </div>
+
+                        <a href="#" class="footer__contacts-email">
+                            <img src="../icons/clock.svg" alt="Clock">
+                            <p>in@mail.ru</p>
+                        </a>
+
+                        <div class="footer__contacts-btn">
+                            <a href="#">Связаться</a>
+                        </div>
+                    </div>
+                </details>
+            </div>
+
+            <div class="footer__mid">
+
+                <a href="../index.html" class="footer__logo">
+                    <img src="../icons/logo.png" alt="Logo">
                 </a>
 
-                <div class="footer__contacts-btn">
-                    <a href="#">Связаться</a>
+                <form class="header__content-b-line-search" action="">
+                    <input type="text" placeholder="Поиск на Енот Паркет">
+                </form>
+
+                <div class="footer__messengers">
+                    <a href="#">
+                        <img src="../icons/tg.svg" alt="tg">
+                    </a>
+
+                    <a href="#">
+                        <img src="../icons/whats.svg" alt="whatsapp">
+                    </a>
+
+                    <a href="#">
+                        <img src="../icons/youtube.svg" alt="youtube">
+                    </a>
+
+                    <a href="#">
+                        <img src="../icons/vk.svg" alt="vk">
+                    </a>
                 </div>
             </div>
-            </details>
-    </div>
 
-        <div class="footer__mid">
-            
-            <a href="../index.html" class="footer__logo">
-                <img src="../icons/logo.png" alt="Logo">
-            </a>
-
-            <form class="header__content-b-line-search" action="">
-                <input type="text">
-            </form>
-
-            <div class="footer__messengers">
-                <a href="#">
-                    <img src="../icons/tg.svg" alt="tg">
-                </a>
-
-                <a href="#">
-                    <img src="../icons/whats.svg" alt="whatsapp">
-                </a>
-
-                <a href="#">
-                    <img src="../icons/youtube.svg" alt="youtube">
-                </a>
-
-                <a href="#">
-                    <img src="../icons/vk.svg" alt="vk">
-                </a>
-            </div>
-        </div>
-
-        <p class="footer__privacy">© ЕнотПаркет. Все права защищены. <br>
-            Информация, предоставленная на сайте, не является публичной офертой
-        </p>
+            <p class="footer__privacy">© ЕнотПаркет. Все права защищены. <br>
+                Информация, предоставленная на сайте, не является публичной офертой
+            </p>
 
         </div>
     </footer>
 
+    <section class="mobile-panel">
+
+        <div class="mobile-panel__search">
+            <img src="../icons/search-mob-panel.svg" alt="Search">
+        </div>
+
+        <a href="#" class="mobile-panel__rutube">
+            <img src="../icons/rutube.svg" alt="Rutube">
+        </a>
+
+        <a href="#">
+            <img src="../icons/whats-mob-panel.svg" alt="WhatsApp">
+        </a>
+
+        <a href="#">
+            <img src="../icons/tg-mob-panel.svg" alt="TG">
+        </a>
+
+        <div class="mobile-panel__heart openModal" data-modal="modal1">
+            <img src="../icons/heart-mob-panel.svg" alt="Heart">
+            <div class="mobile-panel__counter">0</div>
+        </div>
+
+        <div>
+            <img src="../icons/cart-mob-panel.svg" alt="Cart">
+        </div>
+
+        <a href="#">
+            <img src="../icons/phone-mob-panel.svg" alt="Phone">
+        </a>
+
+    </section>
 
     <script src="../script.js"></script>
 </body>

@@ -9,7 +9,6 @@
         flex-direction: column;
         align-items: center;
     }
-    
 
     &__content {
         max-width: 500px;
@@ -31,7 +30,7 @@
         margin-bottom: 30px;
 
         span {
-            color: #159947
+            color: #159947;
         }
     }
 
@@ -58,6 +57,5 @@
         @media (max-width: 969px) {
             max-width: 500px;
         }
-        
     }
 }
