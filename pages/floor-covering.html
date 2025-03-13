@@ -52,11 +52,11 @@
                         <p>0 шт.</p>
                     </a>
 
-                    <a href="#">
-                        <img src="../icons/shop-cart.svg" alt="Shop Cart">
-                        <p>0 шт.</p>
-                        <p>0 ₽</p>
+                    <a class="header-fixed__btns-catalog" href="../pages/catalog.html">
+                        <img src="../icons/catalog.svg" alt="Catalog">
+                        <p>Каталог</p>
                     </a>
+
                 </div>
             </div>
         </div>
@@ -276,10 +276,11 @@
                                     <img src="../icons/heart.svg" alt="Heart">
                                 </a>
 
-                                <a href="#">
-                                    <p>Корзина</p>
-                                    <img src="../icons/shop-cart.svg" alt="Shop Cart">
+                                <a href="../pages/catalog.html">
+                                    <img src="../icons/catalog.svg" alt="Catalog">
+                                    <p>Каталог</p>
                                 </a>
+
                             </div>
 
                             <div class="header__content-b-line-contact-btn">
@@ -292,57 +293,59 @@
                 <div class="header__coverings">
 
                     <ul class="header__coverings-top-list">
+
                         <li class="header__coverings-top-list-item">
-                            <a href="#">Ламинат</a>
+                            <a href="#">Напольная пробка</a>
                         </li>
 
                         <li class="header__coverings-top-list-item">
-                            <a href="#">Ламинат</a>
+                            <a href="#">Уникальная пробка</a>
                         </li>
 
                         <li class="header__coverings-top-list-item">
-                            <a href="#">Ламинат</a>
+                            <a href="#">Настенная пробка</a>
                         </li>
 
                         <li class="header__coverings-top-list-item">
-                            <a href="#">Ламинат</a>
+                            <a href="#">Художественная пробка</a>
                         </li>
 
-                        <li class="header__coverings-top-list-item">
-                            <a href="#">Ламинат</a>
+                        <li class="header__coverings-top-list-item header__coverings-top-list-item--margin-border">
+                            <a href="#">Сотруднечество</a>
                         </li>
 
-                        <li class="header__coverings-top-list-item">
-                            <a href="#">Ламинат</a>
-                        </li>
-
-                        <li class="header__coverings-top-list-item">
-                            <a href="#">Ламинат</a>
-                        </li>
                     </ul>
 
                     <ul class="header__coverings-bottom-list">
-                        <li class="header__coverings-top-list-item">
-                            <a href="#">Ламинат</a>
-                        </li>
 
                         <li class="header__coverings-top-list-item">
                             <a href="#">Ламинат</a>
                         </li>
 
                         <li class="header__coverings-top-list-item">
-                            <a href="#">Ламинат</a>
+                            <a href="#">SPC, Кварц-винил</a>
                         </li>
 
                         <li class="header__coverings-top-list-item">
-                            <a href="#">Ламинат</a>
+                            <a href="#">Паркет</a>
                         </li>
 
                         <li class="header__coverings-top-list-item">
-                            <a href="#">Ламинат</a>
+                            <a href="#">Клей и лак</a>
                         </li>
+
+                        <li class="header__coverings-top-list-item">
+                            <a href="#">Вопрос ответ</a>
+                        </li>
+
+                        <li class="header__coverings-top-list-item header__coverings-top-list-item--margin-border">
+                            <a href="#">Барахолка</a>
+                        </li>
+
                     </ul>
+
                 </div>
+
             </div>
         </div>
     </header>
@@ -941,28 +944,7 @@
 
                         <a href="../pages/commodity.html">
 
-                            <div class="floor-covering__content-card-img">
-                                <img src="../images/33417846.jpg" alt="floor">
-                            </div>
-
-                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
-
-                            <p class="floor-covering__content-card-name">Verde Avila</p>
-
-                            <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
-                            </div>
-                        </a>
-
-                        <div id="heartButton" class="heart-button">
-                            <img class="floor-covering__btn-heart" id="heartButtonImage" src="../icons/heart.svg"
-                                alt="Heart">
-                        </div>
-                    </div>
-
-                    <div class="floor-covering__content-card">
-
-                        <a href="../pages/commodity2.html">
+                            <img class="floor-covering__content-card-logo" src="../icons/logo.png" alt="Logo">
 
                             <div class="floor-covering__content-card-img">
                                 <img src="../images/33417846.jpg" alt="floor">
@@ -972,9 +954,21 @@
 
                             <p class="floor-covering__content-card-name">Verde Avila</p>
 
-                            <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
+                            <div class="floor-covering__content-card-type">
+                                <p>Габариты:</p>
+                                <p>1200 х 1800 х 6-10 мм</p>
                             </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Клеевые полы:</p>
+                                <p class="floor-covering__content-card-price">2667 ₽ / кв.м.</p>
+                            </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Замковые полы:</p>
+                                <p class="floor-covering__content-card-price">2667 ₽ / кв.м.</p>
+                            </div>
+
                         </a>
 
                         <div id="heartButton" class="heart-button">
@@ -982,21 +976,36 @@
                                 alt="Heart">
                         </div>
                     </div>
+
                     <div class="floor-covering__content-card">
 
                         <a href="../pages/commodity.html">
 
+                            <img class="floor-covering__content-card-logo" src="../icons/logo.png" alt="Logo">
+
                             <div class="floor-covering__content-card-img">
                                 <img src="../images/33417846.jpg" alt="floor">
                             </div>
 
-                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
+                            <h3 class="floor-covering__content-card-title">Настенная пробка CORKRUS</h3>
 
                             <p class="floor-covering__content-card-name">Verde Avila</p>
 
-                            <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
+                            <div class="floor-covering__content-card-type">
+                                <p>Покрытие:</p>
+                                <p>выкрас, воск</p>
                             </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Габариты:</p>
+                                <p>600 х 300 х 3 мм.</p>
+                            </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Клеевые плиты:</p>
+                                <p class="floor-covering__content-card-price">2444 ₽ / кв.м.</p>
+                            </div>
+
                         </a>
 
                         <div id="heartButton" class="heart-button">
@@ -1004,21 +1013,36 @@
                                 alt="Heart">
                         </div>
                     </div>
+
                     <div class="floor-covering__content-card">
 
                         <a href="../pages/commodity.html">
 
+                            <img class="floor-covering__content-card-logo" src="../icons/logo.png" alt="Logo">
+
                             <div class="floor-covering__content-card-img">
                                 <img src="../images/33417846.jpg" alt="floor">
                             </div>
 
-                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
+                            <h3 class="floor-covering__content-card-title">Ламинат</h3>
 
                             <p class="floor-covering__content-card-name">Verde Avila</p>
 
-                            <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
+                            <div class="floor-covering__content-card-type">
+                                <p>Класс изностойкости:</p>
+                                <p>33 (АС 5)</p>
                             </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Габариты:</p>
+                                <p>1200 х 180 х 8 мм</p>
+                            </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Замковое соединение:</p>
+                                <p class="floor-covering__content-card-price">3560 ₽ / кв.м.</p>
+                            </div>
+
                         </a>
 
                         <div id="heartButton" class="heart-button">
@@ -1026,21 +1050,36 @@
                                 alt="Heart">
                         </div>
                     </div>
+
                     <div class="floor-covering__content-card">
 
                         <a href="../pages/commodity.html">
 
+                            <img class="floor-covering__content-card-logo" src="../icons/logo.png" alt="Logo">
+
                             <div class="floor-covering__content-card-img">
                                 <img src="../images/33417846.jpg" alt="floor">
                             </div>
 
-                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
+                            <h3 class="floor-covering__content-card-title">SPC, Кварц-винил</h3>
 
                             <p class="floor-covering__content-card-name">Verde Avila</p>
 
-                            <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
+                            <div class="floor-covering__content-card-type">
+                                <p>Класс изностойкости:</p>
+                                <p>43 (АС 5)</p>
                             </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Габариты:</p>
+                                <p>1200 х 180 х 4 мм</p>
+                            </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Замковое соединение:</p>
+                                <p class="floor-covering__content-card-price">3560 ₽ / кв.м.</p>
+                            </div>
+
                         </a>
 
                         <div id="heartButton" class="heart-button">
@@ -1048,21 +1087,36 @@
                                 alt="Heart">
                         </div>
                     </div>
+
                     <div class="floor-covering__content-card">
 
                         <a href="../pages/commodity.html">
 
+                            <img class="floor-covering__content-card-logo" src="../icons/logo.png" alt="Logo">
+
                             <div class="floor-covering__content-card-img">
                                 <img src="../images/33417846.jpg" alt="floor">
                             </div>
 
-                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
+                            <h3 class="floor-covering__content-card-title">SPC, Кварц-винил</h3>
 
                             <p class="floor-covering__content-card-name">Verde Avila</p>
 
-                            <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
+                            <div class="floor-covering__content-card-type">
+                                <p>Класс изностойкости:</p>
+                                <p>43 (АС 5)</p>
                             </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Габариты:</p>
+                                <p>1200 х 180 х 2.5 мм</p>
+                            </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Клеевое соединение:</p>
+                                <p class="floor-covering__content-card-price">3560 ₽ / кв.м.</p>
+                            </div>
+
                         </a>
 
                         <div id="heartButton" class="heart-button">
@@ -1070,21 +1124,36 @@
                                 alt="Heart">
                         </div>
                     </div>
+
                     <div class="floor-covering__content-card">
 
                         <a href="../pages/commodity.html">
 
+                            <img class="floor-covering__content-card-logo" src="../icons/logo.png" alt="Logo">
+
                             <div class="floor-covering__content-card-img">
                                 <img src="../images/33417846.jpg" alt="floor">
                             </div>
 
-                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
+                            <h3 class="floor-covering__content-card-title">Клей и лак</h3>
 
                             <p class="floor-covering__content-card-name">Verde Avila</p>
 
-                            <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
+                            <div class="floor-covering__content-card-type">
+                                <p>Применение:</p>
+                                <p>пробка, дерево</p>
                             </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Объем:</p>
+                                <p>5 л. (3.7 кг) ± 120 г на кв. м.</p>
+                            </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Цена за канистру</p>
+                                <p class="floor-covering__content-card-price">3850 ₽</p>
+                            </div>
+
                         </a>
 
                         <div id="heartButton" class="heart-button">
@@ -1092,21 +1161,36 @@
                                 alt="Heart">
                         </div>
                     </div>
+
                     <div class="floor-covering__content-card">
 
                         <a href="../pages/commodity.html">
 
+                            <img class="floor-covering__content-card-logo" src="../icons/logo.png" alt="Logo">
+
                             <div class="floor-covering__content-card-img">
                                 <img src="../images/33417846.jpg" alt="floor">
                             </div>
 
-                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
+                            <h3 class="floor-covering__content-card-title">Паркет</h3>
 
                             <p class="floor-covering__content-card-name">Verde Avila</p>
 
-                            <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
+                            <div class="floor-covering__content-card-type">
+                                <p>Тип:</p>
+                                <p>инженерная доска селекция А,В,С,D</p>
                             </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Габариты:</p>
+                                <p>1200 х 180 х 10 мм</p>
+                            </div>
+
+                            <div class="floor-covering__content-card-type">
+                                <p>Замковое соединение:</p>
+                                <p class="floor-covering__content-card-price">3560 ₽</p>
+                            </div>
+
                         </a>
 
                         <div id="heartButton" class="heart-button">
@@ -1114,10 +1198,13 @@
                                 alt="Heart">
                         </div>
                     </div>
+
                     <div class="floor-covering__content-card">
 
                         <a href="../pages/commodity.html">
 
+                            <img class="floor-covering__content-card-logo" src="../icons/logo.png" alt="Logo">
+
                             <div class="floor-covering__content-card-img">
                                 <img src="../images/33417846.jpg" alt="floor">
                             </div>
@@ -1127,7 +1214,7 @@
                             <p class="floor-covering__content-card-name">Verde Avila</p>
 
                             <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
+                                <p>2667 ₽ / кв.м.</p>
                             </div>
                         </a>
 
@@ -1136,10 +1223,13 @@
                                 alt="Heart">
                         </div>
                     </div>
+
                     <div class="floor-covering__content-card">
 
                         <a href="../pages/commodity.html">
 
+                            <img class="floor-covering__content-card-logo" src="../icons/logo.png" alt="Logo">
+
                             <div class="floor-covering__content-card-img">
                                 <img src="../images/33417846.jpg" alt="floor">
                             </div>
@@ -1149,7 +1239,7 @@
                             <p class="floor-covering__content-card-name">Verde Avila</p>
 
                             <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
+                                <p>2667 ₽ / кв.м.</p>
                             </div>
                         </a>
 
@@ -1158,10 +1248,13 @@
                                 alt="Heart">
                         </div>
                     </div>
+
                     <div class="floor-covering__content-card">
 
                         <a href="../pages/commodity.html">
 
+                            <img class="floor-covering__content-card-logo" src="../icons/logo.png" alt="Logo">
+
                             <div class="floor-covering__content-card-img">
                                 <img src="../images/33417846.jpg" alt="floor">
                             </div>
@@ -1171,7 +1264,7 @@
                             <p class="floor-covering__content-card-name">Verde Avila</p>
 
                             <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
+                                <p>2667 ₽ / кв.м.</p>
                             </div>
                         </a>
 
@@ -1180,10 +1273,13 @@
                                 alt="Heart">
                         </div>
                     </div>
+
                     <div class="floor-covering__content-card">
 
                         <a href="../pages/commodity.html">
 
+                            <img class="floor-covering__content-card-logo" src="../icons/logo.png" alt="Logo">
+
                             <div class="floor-covering__content-card-img">
                                 <img src="../images/33417846.jpg" alt="floor">
                             </div>
@@ -1193,7 +1289,7 @@
                             <p class="floor-covering__content-card-name">Verde Avila</p>
 
                             <div class="floor-covering__content-card-price">
-                                <p>2667,68 ₽ /1 м<sup>2</sup></p>
+                                <p>2667 ₽ / кв.м.</p>
                             </div>
                         </a>
 
@@ -1202,6 +1298,32 @@
                                 alt="Heart">
                         </div>
                     </div>
+
+                    <div class="floor-covering__content-card">
+
+                        <a href="../pages/commodity.html">
+
+                            <img class="floor-covering__content-card-logo" src="../icons/logo.png" alt="Logo">
+
+                            <div class="floor-covering__content-card-img">
+                                <img src="../images/33417846.jpg" alt="floor">
+                            </div>
+
+                            <h3 class="floor-covering__content-card-title">Напольная пробка CORKRUS</h3>
+
+                            <p class="floor-covering__content-card-name">Verde Avila</p>
+
+                            <div class="floor-covering__content-card-price">
+                                <p>2667 ₽ / кв.м.</p>
+                            </div>
+                        </a>
+
+                        <div id="heartButton" class="heart-button">
+                            <img class="floor-covering__btn-heart" id="heartButtonImage" src="../icons/heart.svg"
+                                alt="Heart">
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="floor-covering__pages">

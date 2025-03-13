@@ -146,7 +146,8 @@ input[type="range"] {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
     margin-bottom: 30px;
 
     @media (max-width: 992px) {
@@ -165,6 +166,8 @@ input[type="range"] {
     }
 
     &__item-link--color {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #7a7a7a;
         color: #dfdfdf;
     }
 }
@@ -617,6 +620,10 @@ input[type="range"] {
     &__btns-heart {
         margin: 0 3px;
     }
+
+    &__btns-catalog {
+        gap: 10px;
+    }
 }
 
 .header-mobile {
@@ -768,7 +775,7 @@ input[type="range"] {
 .header {
     padding-top: 20px;
     font-family: "Oswald", sans-serif;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
     @media (max-width: 992px) {
         display: none;
@@ -950,6 +957,11 @@ input[type="range"] {
         text-align: center;
         padding: 10px 0;
         border: 1px solid #d1d1d1;
+
+        &--margin-border {
+            margin-right: -1px;
+            border-right: 2px solid #d1d1d1;
+        }
     }
 
     &__coverings-bottom-list {
@@ -963,6 +975,7 @@ input[type="range"] {
     }
 
     &__menu {
+
         @media (max-width: 992px) {
             display: none;
             position: absolute;
@@ -1036,6 +1049,7 @@ input[type="range"] {
 }
 
 .heart-button-modal {
+    display: none;
     max-width: 55px;
     height: auto;
     position: fixed;
@@ -1047,10 +1061,6 @@ input[type="range"] {
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
     cursor: pointer;
-
-    @media (max-width: 992px) {
-        display: none !important;
-    }
 }
 
 .heart-button-counter {
