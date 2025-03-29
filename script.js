@@ -100,8 +100,8 @@ const secondProduct = {
   price: 3000,
 }
 
-let price = firstProduct.price;
-let area = firstProduct.area;
+// let price = $('#price').data('oneprice');
+// let area = $('#price').data('area');
 
 addEventListener('click', (event) => {
 
@@ -125,6 +125,8 @@ addEventListener('click', (event) => {
     countArea.value = secondProduct.area;
     totalAmount.innerHTML = secondProduct.price;
   }
+    price = $('#price').data('oneprice');
+    area = $('#price').data('area');
 });
 
 function toggleAttribute(target) {
@@ -138,24 +140,36 @@ function toggleAttribute(target) {
 const totalAmount = document.getElementById("price");
 
 countArea?.addEventListener('change', (event) => {
+
+    price = $('#price').data('oneprice');
+    area = $('#price').data('area');
   event.target.value = (Math.round(event.target.value / area) * area).toFixed(2);
   count.value = Math.round(event.target.value / area);
   totalAmount.innerHTML = +price * +count.value;
 });
 
 count?.addEventListener('change', (event) => {
+
+    price = $('#price').data('oneprice');
+    area = $('#price').data('area');
   event.target.value = Math.round(event.target.value);
   countArea.value = event.target.value * area;
   totalAmount.innerHTML = event.target.value * price;
 });
 
 buttonCountPlusArea?.addEventListener('click', () => {
+
+    price = $('#price').data('oneprice');
+    area = $('#price').data('area');
   countArea.value = (+countArea.value + area).toFixed(2);
   count.value = +count.value + 1;
   totalAmount.innerHTML = +totalAmount.innerHTML + +price;
 });
 
 buttonCountMinusArea?.addEventListener('click', () => {
+
+    price = $('#price').data('oneprice');
+    area = $('#price').data('area');
   if (countArea.value >= 1) {
     countArea.value = (+countArea.value - area).toFixed(2);
     count.value = +count.value - 1;
@@ -164,12 +178,18 @@ buttonCountMinusArea?.addEventListener('click', () => {
 });
 
 buttonCountPlus?.addEventListener('click', () => {
+
+    price = $('#price').data('oneprice');
+    area = $('#price').data('area');
   count.value = +count.value + 1;
   countArea.value = (+countArea.value + area).toFixed(2);
   totalAmount.innerHTML = +totalAmount.innerHTML + +price;
 });
 
 buttonCountMinus?.addEventListener('click', () => {
+
+    price = $('#price').data('oneprice');
+    area = $('#price').data('area');
   if (count.value >= 2) {
     count.value = +count.value - 1;
     countArea.value = (+countArea.value - area).toFixed(2);
@@ -194,34 +214,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
   })
 
-  heartButtons.forEach(heartButton => {
-
-    heartButton.addEventListener('click', () => {
-
-      const image = heartButton.querySelector('img');
-
-      if (image.src.includes('/icons/heart.svg')) {
-    
-        image.src = '/icons/red-heart.svg';
-    
-        if (!favorites) {
-          heartButtonModal.classList.add('visible');
-        }
-
-        favorites++;
-
-      } else {
-    
-        image.src = '/icons/heart.svg';
-
-        favorites--;
-    
-        if (!favorites) {
-          heartButtonModal.classList.remove('visible');
-        }
-      }
-    });
-  })
 })
 
 heartButtonModalClose?.addEventListener("click", () => {

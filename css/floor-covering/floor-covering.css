@@ -58,7 +58,7 @@
   }
 }
 .floor-covering__filter {
-  width: 20%;
+  width: 30%;
 }
 @media (max-width: 700px) {
   .floor-covering__filter {
@@ -159,7 +159,7 @@
   }
 }
 .floor-covering__content {
-  width: 80%;
+  width: 70%;
 }
 @media (max-width: 700px) {
   .floor-covering__content {
@@ -227,7 +227,7 @@
 }
 .floor-covering__content-card {
   position: relative;
-  padding: 40px 20px 0 20px;
+  padding: 40px 20px;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
 }
@@ -236,14 +236,6 @@
     padding: 20px 20px;
     margin-bottom: 15px;
   }
-}
-.floor-covering__content-card-logo {
-  width: 50%;
-  position: absolute;
-  top: 33%;
-  left: 50%;
-  transform: translate(-50%, -33%);
-  opacity: 0.5;
 }
 .floor-covering__content-card-img {
   margin-bottom: 15px;
@@ -260,9 +252,11 @@
 .floor-covering__content-card-type {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
   font-size: 18px;
   margin-bottom: 15px;
+}
+.floor-covering__content-card-type :last-child {
+  white-space: nowrap;
 }
 .floor-covering__content-card-price {
   display: flex;
