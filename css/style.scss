@@ -712,6 +712,10 @@ input[type="range"] {
         flex-direction: column;
         gap: 20px;
         padding-top: 20px;
+
+        :first-child {
+            color: #159947;
+        }
     }
 
     .dropdown-content a:hover {
@@ -1295,6 +1299,14 @@ input[type="range"] {
         transform: none !important;
         color: #fff;
         background-color: rgba(0, 0, 0, 0.4);
+
+        @media (max-width: 1300px) {
+            bottom: 35px;
+        }
+
+        @media (max-width: 468px) {
+            bottom: 25px;
+        }
     }
 
     &__content-card-name {

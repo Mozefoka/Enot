@@ -669,6 +669,9 @@ input[type=range] {
   gap: 20px;
   padding-top: 20px;
 }
+.header-mobile .dropdown-content-item :first-child {
+  color: #159947;
+}
 .header-mobile .dropdown-content a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -1202,6 +1205,16 @@ input[type=range] {
   transform: none !important;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 1300px) {
+  .catalog__content-card-box {
+    bottom: 35px;
+  }
+}
+@media (max-width: 468px) {
+  .catalog__content-card-box {
+    bottom: 25px;
+  }
 }
 .catalog__content-card-name {
   max-width: 340px;
