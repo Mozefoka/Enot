@@ -255,11 +255,11 @@ document.addEventListener('click', function (event) {
   const arrow = document.querySelector('.arrow');
 
   if (event.target.closest('.dropdown-btn')) {
-    if (dropdownContent.style.display === 'flex') {
+    if (dropdownContent.style.display === 'block') {
       dropdownContent.style.display = 'none';
       arrow.classList.remove('up');
     } else {
-      dropdownContent.style.display = 'flex';
+      dropdownContent.style.display = 'block';
       arrow.classList.add('up');
     }
   } else if (!event.target.closest('.dropdown-content')) {

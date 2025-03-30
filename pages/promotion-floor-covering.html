@@ -23,7 +23,7 @@
                 <div class="header-fixed__first-item">
 
                     <div class="header-fixed__logo">
-                        <a href="../index.html">
+                        <a href="#">
                             <img src="../icons/logo.png" alt="Logo">
                         </a>
                     </div>
@@ -46,9 +46,10 @@
                 </div>
 
                 <div class="header-fixed__btns">
+
                     <a class="openModal" data-modal="modal1">
                         <p>Избранное</p>
-                        <img src="../icons/heart.svg" alt="Heart" class="header-fixed__btns-heart">
+                        <img class="header-fixed__btns-heart" src="../icons/heart.svg" alt="Heart">
                         <p>0 шт.</p>
                     </a>
 
@@ -66,7 +67,7 @@
 
         <div class="header-mobile">
             <div class="header-mobile__logo">
-                <a href="../index.html">
+                <a href="#">
                     <img src="../icons/logo.png" alt="Logo">
                 </a>
             </div>
@@ -74,46 +75,53 @@
             <div class="header-mobile__catalog">
                 <div class="dropdown">
 
-                    <div class="dropdown-btn" onclick="toggleDropdown()">
+                    <div class="dropdown-btn">
                         <p>Каталог</p>
                         <img src="../icons/arrow-down.svg" class="arrow">
                     </div>
 
                     <div class="dropdown-content">
 
-                        <div class="dropdown-content-item">
-                            <a href="#">Напольная пробка</a>
+                        <div class="dropdown-content-box">
 
-                            <a href="#">Настенная пробка</a>
+                            <form class="header__content-b-line-search" action="">
+                                <input type="text" placeholder="Поиск на Енот Паркет">
+                            </form>
+                            
+                            <div class="dropdown-content-item">
+    
+                                <a href="#">Напольная пробка</a>
+    
+                                <a href="#">Настенная пробка</a>
+    
+                                <a href="#">Уникальная пробка</a>
+    
+                                <a href="#">Художественная пробка</a>
+        
+                                <a href="#">Ламинат</a>
+    
+                                <a href="#">SPC, Кварц винил</a>
+    
+                                <a href="#">Паркет</a>
 
-                            <a href="#">Уникальная пробка</a>
-
-                            <a href="#">Художественная пробка</a>
-
-                            <a href="#">Клей и лак</a>
-
-                            <a href="#">Ламинат</a>
-
-                            <a href="#">SPC, Кварц винил</a>
-
-                            <a href="#">Паркет</a>
-
-                            <a href="#">Сотрудничество</a>
-
-                            <a href="#">Вопрос-ответ</a>
-
-                            <a href="#">Барахолка</a>
+                                <a href="#">Клей и лак</a>
+    
+                                <a href="../pages/promotion-catalog.html">Акции</a>
+    
+                                <a href="#">Барахолка</a>
+                                
+                            </div>
                         </div>
-                        
-                    </div>
 
+                    </div>
+                    
                 </div>
             </div>
 
-            <nav class="header__menu" id="menu">
+            <nav class="header__menu" id="menu1">
 
                 <form class="header__menu-form header__content-b-line-search" action="">
-                    <input type="text" placeholder="Поиск на Енот Паркет">
+                    <input class="" type="text" placeholder="Поиск на Енот Паркет">
                 </form>
 
                 <ul class="header__menu-list">
@@ -123,15 +131,11 @@
                     </li>
 
                     <li>
-                        <a class="header__menu-list-link--color" href="../pages/catalog.html">Каталог</a>
+                        <a href="../pages/catalog.html">Каталог</a>
                     </li>
 
                     <li>
                         <a href="../pages/services.html">Услуги</a>
-                    </li>
-
-                    <li class="header__menu-list-promotions">
-                        <a href="../pages/promotion-catalog.html">Акции</a>
                     </li>
 
                     <li class="header__menu-list-useful-video">
@@ -147,20 +151,25 @@
                     </li>
 
                     <li class="header__menu-list-our-job">
-                        <a href="../pages/services.html">Наши работы</a>
+                        <a href="#">Наши работы</a>
+                    </li>
+
+                    <li class="header__menu-list-our-job">
+                        <a href="#">Сотрудничество</a>
+                    </li>
+                    
+                    <li class="header__menu-list-our-job">
+                        <a href="#">Вопрос-ответ</a>
                     </li>
 
                     <li class="header__menu-list-contacts">
                         <a href="../pages/contacts.html">Контакты</a>
                     </li>
 
-                    <li class="header__menu-list-number">
-                        <a href="tel:+79213466257">+7 921 346 62 57</a>
-                    </li>
                 </ul>
             </nav>
 
-            <div class="header-mobile__burger" data-menu="menu">
+            <div class="header-mobile__burger" data-menu="menu1">
                 <span class="header-mobile__burger-line1"></span>
 
                 <span class="header-mobile__burger-line2"></span>
@@ -174,13 +183,12 @@
 
                 <nav class="header__menu">
                     <ul class="header__menu-list">
-
                         <li>
                             <a href="../index.html">Главная</a>
                         </li>
 
                         <li>
-                            <a class="header__menu-list-link--color" href="../pages/catalog.html">Каталог</a>
+                            <a href="../pages/catalog.html">Каталог</a>
                         </li>
 
                         <li>
@@ -188,7 +196,7 @@
                         </li>
 
                         <li class="header__menu-list-promotions">
-                            <a href="../pages/promotion-catalog.html">Акции</a>
+                            <a class="header__menu-list-link--color" href="../pages/promotion-catalog.html">Акции</a>
                         </li>
 
                         <li class="header__menu-list-useful">
@@ -344,7 +352,6 @@
                     </ul>
 
                 </div>
-
             </div>
         </div>
     </header>
